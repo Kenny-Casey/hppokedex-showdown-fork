@@ -5660,4 +5660,314 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -3,
 	},
+
+	//Hppokedex changes
+	soulsiphon: {
+		onModifyMove(move, pokemon) {
+			if (move.type=="Ghost") {
+				move.drain=[1,2];
+			}
+		},
+		flags: {},
+		name: "Soul Siphon",
+		rating: 3.5,
+		num: -1000,
+		isNonstandard: "HPPokedex",
+	},
+	flee:{
+		onAfterMove(source, target, move) {
+			if(move.category == 'Status'){
+				source.switchFlag = true;
+			};
+		},
+		flags: {},
+		name: "Flee",
+		rating: 3.5,
+		num: -1001,
+		isNonstandard: "HPPokedex",
+	},
+	kickback:{
+		onAfterMove(source, target, move) {
+			if(move.category !== 'Status'){
+				source.switchFlag = true;
+			};
+		},
+		flags: {},
+		name: "Kickback",
+		rating: 3.5,
+		num: -1002,
+		isNonstandard: "HPPokedex",
+	},
+	freebird: {
+		onModifySpe(spe, pokemon) {
+			if (!pokemon.item && !pokemon.ignoringAbility()) {
+				return this.chainModify(1.5);
+			};
+		},
+		flags:{},
+		name: "Free Bird",
+		rating: 3.5,
+		num: -1003,
+		isNonstandard: "HPPokedex",
+	},
+	pyrotechnic: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Fire';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		flags: {},
+		name: "Pyrotechnic",
+		rating: 4,
+		num: -1004,
+		isNonstandard: "HPPokedex",
+	},
+	cloudspewer: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Filter neutralize');
+				return this.chainModify(0.75);
+			}
+		},
+				onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Flying') {
+				this.debug('Transistor boost');
+				return this.chainModify([5120, 4096]);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Flying') {
+				this.debug('Transistor boost');
+				return this.chainModify([5120, 4096]);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Cloud Spewer",
+		rating: 4,
+		num: -1005,
+		isNonstandard: "HPPokedex",
+	},
+	eyeofmalice: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball','futuresight',
+			];
+			if ((move.type === 'Normal' || move.type === 'Psychic') && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Dark';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onModifyMove(move) {
+			if (move.secondaries) {
+				this.debug('doubling secondary chance');
+				for (const secondary of move.secondaries) {
+					if (secondary.chance) secondary.chance *= 1.5;
+				}
+			}
+			if (move.self?.chance) move.self.chance *= 1.5;
+		},
+		flags: {},
+		name: "Eye of Malice",
+		rating: 4,
+		num: -1006,
+		isNonstandard: "HPPokedex",
+	},
+	virtueoffortitude: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			if (boost.def && boost.def < 0) {
+				delete boost.def;
+				if (!(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+					this.add("-fail", target, "unboost", "Defense", "[from] ability: Virtue of Fortitude", `[of] ${target}`);
+				}
+			}
+		},
+		onModifyDefPriority: 5,
+		onModifyDef(def, pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2) {
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Virtue of Fortitude",
+		rating: 4,
+		num: -1007,
+		isNonstandard: "HPPokedex",
+	},
+	virtueofjustice: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			if (boost.atk && boost.atk < 0) {
+				delete boost.atk;
+				if (!(effect as ActiveMove).secondaries) {
+					this.add("-fail", target, "unboost", "Attack", "[from] ability: Virtue of Justice", `[of] ${target}`);
+				}
+			}
+		},
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2) {
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Virtue of Justice",
+		rating: 4,
+		num: -1008,
+		isNonstandard: "HPPokedex",
+	},
+	virtueofprudence: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			if (boost.spa && boost.spa < 0) {
+				delete boost.spa;
+				if (!(effect as ActiveMove).secondaries) {
+					this.add("-fail", target, "unboost", "Special Attack", "[from] ability: Virtue of Prudence", `[of] ${target}`);
+				}
+			}
+		},
+		onModifySpAPriority: 5, 
+		onModifySpA(spa, pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2) {
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Virtue of Prudence",
+		rating: 4,
+		num: -1009,
+		isNonstandard: "HPPokedex",
+	},
+	virtueoftemperance: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			if (boost.spd && boost.spd < 0) {
+				delete boost.spd;
+				if (!(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+					this.add("-fail", target, "unboost", "Special Defense", "[from] ability: Virtue of Temperance", `[of] ${target}`);
+				}
+			}
+		},
+		onModifySpDPriority: 5,
+		onModifySpD(spd, pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 2) {
+				return this.chainModify(1.5);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Virtue of Temperance",
+		rating: 4,
+		num: -1010,
+		isNonstandard: "HPPokedex",
+	},
+	sunkencoralcrown: {
+		onModifyAtk(atk, pokemon) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onModifyDef(def, pokemon) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onModifySpA(spa, pokemon) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onModifySpD(spd, pokemon) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		onModifySpe(spe, pokemon) {
+			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify([4915, 4096]);
+			}
+		},
+		flags: {},
+		name: "Sunken Coral Crown",
+		rating: 4.5,
+		num: -1011,
+		isNonstandard: "HPPokedex",
+	},
+	goliath: {
+		onDamage(damage, target, source, effect) {
+			if (effect.effectType !== 'Move') {
+				if (effect.effectType === 'Ability') this.add('-activate', source, 'ability: ' + effect.name);
+				this.directDamage(damage,target,target)
+				this.heal(target.baseMaxhp / 5);
+				return false;
+			}
+		},
+		flags: {},
+		name: "Goliath",
+		rating: 5,
+		num: -1012,
+		isNonstandard: "HPPokedex",
+	},
+	holyeyes: {
+		onModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod < 0) {
+				this.debug('Holy Eyes boost');
+				return this.chainModify(2);
+			}
+		},
+		onSourceModifyAccuracyPriority: -1,
+		onSourceModifyAccuracy(accuracy) {
+			if (typeof accuracy !== 'number') return;
+			this.debug('holyeyes - enhancing accuracy');
+			return this.chainModify([5325, 4096]);
+		},
+		flags: {},
+		name: "Holy Eyes",
+		rating: 5,
+		num: -1013,
+		isNonstandard: "HPPokedex",
+	},
+	billowingsmoke: {
+		onDamage(damage, target, source, effect) {
+			if (effect.effectType !== 'Move') {
+				if (effect.effectType === 'Ability') this.add('-activate', source, 'ability: ' + effect.name);
+				return damage/2;
+			}
+			else{
+				if(effect.basePower<80){
+					return damage/2;
+				}
+			}
+		},
+		flags: {},
+		name: "Billowing Smoke",
+		rating: 5,
+		num: -1014,
+		isNonstandard: "HPPokedex",
+	},
+	soulreaper: {
+		onModifyMove(move, pokemon) {
+			if (move.type=="Ghost"||move.type=="Water") {
+				move.drain=[1,2];
+			}
+		},
+		flags: {},
+		name: "Soul Reaper",
+		rating: 4,
+		num: -1015,
+		isNonstandard: "HPPokedex",
+	},
 };

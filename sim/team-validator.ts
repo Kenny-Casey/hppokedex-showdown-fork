@@ -1842,8 +1842,9 @@ export class TeamValidator {
 		// complicated in terms of what trumps it. We don't want e.g.
 		// +Mythical to unban Shaymin in Gen 1, for instance.
 		let nonexistentCheck = Tags.nonexistent.genericFilter!(tierSpecies) && ruleTable.check('nonexistent');
-
-		const EXISTENCE_TAG = ['past', 'future', 'lgpe', 'unobtainable', 'cap', 'custom', 'nonexistent'];
+		
+		//HPPokedex changes
+		const EXISTENCE_TAG = ['past', 'future', 'lgpe', 'unobtainable', 'cap', 'custom', 'nonexistent', 'hppokedex'];
 
 		for (const ruleid of ruleTable.tagRules) {
 			if (ruleid.startsWith('*')) continue;
@@ -1880,6 +1881,10 @@ export class TeamValidator {
 			}
 			if (tierSpecies.isNonstandard === 'Gigantamax') {
 				return `${tierSpecies.name} is a placeholder for a Gigantamax sprite, not a real Pokémon. (This message is likely to be a validator bug.)`;
+			}
+			//HPPokedex changes
+			if (tierSpecies.isNonstandard === 'HPPokedex') {
+				return `${tierSpecies.name} is an HPPokedex fakemon and does not exist in this game.`;
 			}
 			return `${tierSpecies.name} does not exist in this game.`;
 		}

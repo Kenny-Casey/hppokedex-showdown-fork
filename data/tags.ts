@@ -364,4 +364,15 @@ export const Tags: { [id: IDEntry]: TagData } = {
 		name: "Max PP",
 		moveNumCol: move => move.pp,
 	},
+	
+	//HPPokedex changes
+	hppokedextier: {
+		name: "HPPokedex Tier",
+		speciesFilter: species => species.isNonstandard === 'HPPokedex',
+	},
+	
+	hppokedex: {
+		name: "HPPokedex",
+		speciesFilter: thing => thing.isNonstandard === 'HPPokedex',
+	},
 };

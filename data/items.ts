@@ -8164,4 +8164,42 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 8,
 		isNonstandard: "CAP",
 	},
+
+	//Hppokedex changes
+	styrafimite: {
+		name: "Styrafimite",
+		spritenum: -1000,
+		megaStone: { "Styrafim": "Styrafim-Mega" },
+		itemUser: ["Styrafim"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -1000,
+		gen: 9,
+		isNonstandard: "HPPokedex",
+	},
+	baasphyxite: {
+		name: "Baasphyxite",
+		spritenum: -1001,
+		megaStone: {"Baasphyx":"Baasphyx-Mega"},
+		itemUser: ["Baasphyx"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -1001,
+		gen: 9,
+		isNonstandard: "HPPokedex",
+	},
+	reelingerite: {
+		name: "Reelingerite",
+		spritenum: -1002,
+		megaStone: {"Reelinger":"Reelinger-Mega"},
+		itemUser: ["Reelinger"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -1002,
+		gen: 9,
+		isNonstandard: "HPPokedex",
+	},
 };

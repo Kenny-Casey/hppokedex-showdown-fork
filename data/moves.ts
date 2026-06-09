@@ -21310,4 +21310,242 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		contestType: "Beautiful",
 	},
+	//Hppokedex changes
+	flaminginsulation: {
+		num: 1000,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Flaming Insulation",
+		pp: 5,
+		priority: 0,
+		flags: { snatch: 1, heal: 1, metronome: 1 },
+		onTry(source, target, move) {
+			const hpThresh=source.hp/source.maxhp;
+			this.heal(source.baseMaxhp / 2, source, source);
+			if (hpThresh>=0.67) {
+				return;
+			}
+			return null;
+		},
+		target: "allAdjacentFoes",
+		status: 'brn',
+		secondary: undefined,
+		type: "Fire",
+		contestType: "Clever",
+		isNonstandard: "HPPokedex",
+	},
+	atomichoney: {
+		num: 1001,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Atomic Honey",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		secondary: {
+			chance: 30,
+			status: 'tox',
+		},
+		target: "normal",
+		type: "Fire",
+		contestType: "Clever",
+		isNonstandard: "HPPokedex",
+	},
+	twistedpaw: {
+		num: 1002,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Twisted Paw",
+		pp: 10,
+		priority: 0,
+		flags: {bypasssub: 1, protect: 1, reflectable: 1, mirror: 1 },
+		volatileStatus: 'curse',
+		onHit(target, source, move) {
+			const bestStat = target.getBestStat(false, true);
+			this.boost({ [bestStat]: 2 }, target);
+		},
+		condition: {
+			onStart(pokemon, source) {
+				this.add('-start', pokemon, 'Curse', `[of] ${source}`);
+			},
+			onResidualOrder: 12,
+			onResidual(pokemon) {
+				this.damage(pokemon.baseMaxhp / 4);
+			},
+		},
+		type: "Psychic",
+		target: "normal",
+		isNonstandard: "HPPokedex",
+	},
+	mysterypotion: {
+		num: 1003,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Mystery Potion",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1, bullet: 1 },
+		onTryHit(target, source, move) {
+			if (source.isAlly(target)) {
+				move.basePower = 0;
+				move.infiltrates = true;
+			}
+		},
+		onTryMove(source, target, move) {
+			if (source.isAlly(target) && source.volatiles['healblock']) {
+				this.attrLastMove('[still]');
+				this.add('cant', source, 'move: Heal Block', move);
+				return false;
+			}
+			else if(source.isAlly(target)){
+				if (!move.ignoreImmunity) move.ignoreImmunity = {};
+				if (move.ignoreImmunity !== true) {
+					move.ignoreImmunity['Poison'] = true;
+				}
+				return true;
+			}
+		},
+		onHit(target, source, move) {
+			if (source.isAlly(target)) {
+				if (!this.heal(Math.floor(target.baseMaxhp * 0.5))) {
+					return this.NOT_FAIL;
+				}
+			}
+		},
+		secondary: undefined,
+		target: "normal",
+		type: "Poison",
+		contestType: "Cute",
+		isNonstandard: "HPPokedex",
+	},
+	steeldivebomber: {
+		num: 1004,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Steel Divebomber",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1 },
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('spd', false, true) > pokemon.getStat('def', false, true)) move.overrideOffensiveStat='spd';
+		},
+		secondary: undefined,
+		overrideOffensiveStat:'def',
+		target: "normal",
+		type: "Steel",
+		contestType: "Cute",
+		isNonstandard: "HPPokedex",
+	},
+	risingvirtue: {
+		num: 1005,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		name: "Rising Virtue",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		onModifyMove(move, pokemon) {
+			const bestStat = pokemon.getBestStat(false, true);
+			move.overrideOffensiveStat=bestStat;
+		},
+		onAfterHit(target, source, move) {
+			const bestStat = source.getBestStat(false, true);
+			this.boost({ [bestStat]: 1 }, source);
+		},
+		target: "normal",
+		type: "Steel",
+		isNonstandard: "HPPokedex",
+	},	
+	shortcircuit: {
+		num: 1006,
+		accuracy: 100,
+		basePower: 55,
+		category: "Special",
+		name: "Short Circuit",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1 },
+		onModifyPriority(priority, source, target, move) {
+			if (this.field.isTerrain('electricterrain') && source.isGrounded()) {
+				return priority + 1;
+			}
+		},
+		secondary: undefined,
+		target: "normal",
+		type: "Electric",
+		contestType: "Cool",
+		isNonstandard: "HPPokedex",
+	},
+	scuttledship: {
+		num: 1007,
+		accuracy: 80,
+		basePower: 120,
+		category: "Special",
+		name: "Scuttled Ship",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		onBasePower(basePower, pokemon, target, contact) {
+			if(target.hp==1){
+				return this.chainModify(2);
+			}
+			else if (target.hp * 2 <= target.maxhp) {
+				return this.chainModify([5120, 4096]);
+			}
+		},
+		secondary: undefined,
+		target: "normal",
+		type: "Water",
+		contestType: "Tough",
+		isNonstandard: "HPPokedex",
+	},
+	coldsoul: {
+		num: 1008,
+		accuracy: 95,
+		basePower: 80,
+		category: "Physical",
+		name: "Cold Soul",
+		pp: 15,
+		priority: -3,
+		flags: {
+			contact: 1, protect: 1,  failmefirst: 1, nosleeptalk: 1, noassist: 1, failcopycat: 1, failinstruct: 1,
+		},
+		priorityChargeCallback(pokemon) {
+			pokemon.addVolatile('coldsoul');
+		},
+		beforeMoveCallback(pokemon) {
+			if (pokemon.volatiles['coldsoul']?.lostFocus) {
+				this.add('cant', pokemon, 'Cold Soul', 'Cold Soul');
+				return true;
+			}
+		},
+		condition: {
+			duration: 1,
+			onStart(pokemon) {
+				this.add('-singleturn', pokemon, 'move: Cold Soul');
+			},
+			onHit(pokemon, source, move) {
+				if (move.category !== 'Status') {
+					this.effectState.lostFocus = true;
+				}
+			},
+			onTryAddVolatile(status, pokemon) {
+				if (status.id === 'flinch') return null;
+			},
+		},
+		secondary: {
+			chance: 100,
+			status: 'frz',
+		},
+		target: "normal",
+		type: "Ghost",
+		contestType: "Tough",
+		isNonstandard: "HPPokedex",
+	},
 };

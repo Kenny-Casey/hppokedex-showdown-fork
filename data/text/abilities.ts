@@ -2305,4 +2305,86 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+
+	//HPPokedex Changes
+	soulsiphon: {
+		name: "Soul Siphon",
+		desc: "This Pokemon restores 1/2 of the damage dealt, rounded down, when attacking using a Ghost-type move.",
+		shortDesc: "This Pokemon heals 1/2 damage dealt when using Ghost-type attacks.",
+	},
+	flee: {
+		name: "Flee",
+		desc: "When this Pokemon uses a status move, if the move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
+		shortDesc: "This Pokemon switches out when it uses a status move.",
+	},
+	kickback: {
+		name: "Kickback",
+		desc: "When this Pokemon uses a damaging move, if the move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
+		shortDesc: "This Pokemon switches out when it uses a damaging move.",
+	},
+	freebird: {
+		name: "Free Bird",
+		desc: "This Pokemon's Speed is raised by 1 stage, on switch-in, if it is not holding an item, or if this Pokemon loses its held item for any reason.",
+		shortDesc: "This Pokemon's Speed is raised 1 stage if it has no item.",
+	},
+	pyrotechnic: {
+		name: "Pyrotechnic",
+		desc: "This Pokemon's Normal-type moves become Fire-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Fire type and have 1.2x power.",
+	},
+	cloudspewer: {
+		name: "Cloud Spewer",
+		desc: "This Pokemon's Flying-type moves deal have their damage multiplied by 1.25 and it receives 3/4 damage from supereffective attacks.",
+		shortDesc: "Flying moves deal 1.25x damage. Recieves 3/4 damage from supereffective attacks",
+	},
+	eyeofmalice: {
+		name: "Eye of Malice",
+		desc: "This Pokemon's Normal-type and Psychic-type moves become Dark-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects. This Pokemon's moves have their secondary effect chance multiplied by 1.5.",
+		shortDesc: "Normal and Psychic moves become Dark. Secondary effect chance 1.5x.",
+	},
+	virtueoffortitude: {
+		name: "Virtue of Fortitude",
+		desc: "This Pokemon's Defense stat cannot be lowered. 1.5x Defense on 50% or less HP.",
+		shortDesc: "This Pokemon's Defense stat cannot be lowered. 1.5x Defense on 50% or less HP.",
+	},
+	virtueofjustice: {
+		name: "Virtue of Justice",
+		desc: "This Pokemon's Attack stat cannot be lowered. 1.5x Attack on 50% or less HP.",
+		shortDesc: "This Pokemon's Attack stat cannot be lowered. 1.5x Attack on 50% or less HP.",
+	},
+	virtueofprudence: {
+		name: "Virtue of Prudence",
+		desc: "This Pokemon's Special Attack stat cannot be lowered. 1.5x Special Attack on 50% or less HP.",
+		shortDesc: "This Pokemon's Special Attack stat cannot be lowered. 1.5x Special Attack on 50% or less HP.",
+	},
+	virtueoftemperance: {
+		name: "Virtue of Temperance",
+		desc: "This Pokemon's Special Defense stat cannot be lowered. 1.5x Special Defense on 50% or less HP.",
+		shortDesc: "This Pokemon's Special Defense stat cannot be lowered. 1.5x Special Defense on 50% or less HP.",
+	},
+	sunkencoralcrown: {
+		name: "Sunken Coral Crown",
+		desc: "If Rain Dance is active, this Pokemon's Attack, Defense, Special Attack, Special Defense, and Speed are multiplied by 1.2. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If Rain Dance is active, boosts all stats by 1.2x (not acc/eva).",
+	},
+	goliath: {
+		name: "Goliath",
+		desc: "This Pokemon heals for 20% of its max HP when it is damaged by things other than direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage.",
+		shortDesc: "This Pokemon heals for 20% of its max HP when hurt by indirect damage.",
+	},
+	holyeyes: {
+		name: "Holy Eyes",
+		desc: "This Pokemon's not very effective attacks deal double damage. This Pokemon's moves have their accuracy multiplied by 1.3.",
+		shortDesc: "This Pokemon's not very effective attacks deal double damage. This Pokemon's moves have their accuracy multiplied by 1.3.",
+	},
+	billowingsmoke: {
+		name: "Billowing Smoke",
+		desc: "This pokemon takes half as much damage from moves with 80 or less Base Power, as well as indirect sources of damage. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage.",
+		shortDesc: "This Pokemon takes 50% damage from 80 Base Power or lower moves and indirect damage.",
+	},
+	soulreaper: {
+		name: "Soul Reaper",
+		desc: "This Pokemon restores 1/2 of the damage dealt, rounded down, when attacking using a Ghost-type or Water-Type move.",
+		shortDesc: "This Pokemon heals 1/2 damage dealt when using Ghost-type or Water-type attacks.",
+	},
 };

@@ -19,6 +19,18 @@ The column value will be ignored for repeat sections.
 
 export const Formats: import('../sim/dex-formats').FormatList = [
 
+	// HPPokedex Tiers
+
+	{
+		section: "HPPokedex"
+	},
+	{
+		name: "[Gen 9 HPPokedex] OU",
+		desc: "Test",
+		mod: 'gen9hppokedex',
+		ruleset: ['Standard','+HPPokedex'],
+	},
+
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
 
