@@ -21792,10 +21792,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	},
 
 	sableyeheroguea: {
-		num: 302,
+		num: -1048,
 		name: "Sableye-Heroguea",
-		baseSpecies: "Sableye",
-		forme: "Heroguea",
 		types: ["Dark", "Water"],
 		baseStats: { hp: 50, atk: 80, def: 55, spa: 80, spd: 55, spe: 60 },
 		abilities: { 0: "Keen Eye", 1: "Hyperfixation", H: "Anticipation" },
@@ -21808,7 +21806,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	},
 
 	sableyeherogueamega: {
-		num: 302,
+		num: -1048,
 		name: "Sableye-Heroguea-Mega",
 		baseSpecies: "Sableye-Heroguea",
 		forme: "Mega",
