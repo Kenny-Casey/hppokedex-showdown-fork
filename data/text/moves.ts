@@ -7657,52 +7657,49 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "The user restores 1/2 of its maximum HP. All opponents are burned if 1/3 or less is healed.",
 		shortDesc: "Heals 50%. Burns foe(s) if under 33% healed",
 	},
-
 	atomichoney: {
 		name: "Atomic Honey",
 		desc: "Has a 30% chance to badly poison the target.",
 		shortDesc: "30% chance to badly poison the target.",
 	},
-
 	twistedpaw: {
 		name: "Twisted Paw",
 		desc: "Raises the target's highest stat by 2 stages as long as the stat is not already at stage 6 in exchange for the target losing 1/4 of its maximum HP, rounded down, at the end of each turn while it is active. If the target uses Baton Pass, the replacement will continue to be affected. Fails if there is no target or if the target is already affected, if no stat stage can be raised, or if used on an ally with a substitute.",
 		shortDesc: "Curses the target and raises its highest stat by 2 stages.",
 	},
-
 	mysterypotion: {
 		name: "Mystery Potion",
 		desc: "If the target is an ally, this move restores 1/2 of its maximum HP, rounded down, instead of dealing damage.",
 		shortDesc: "If the target is an ally, heals 50% of its max HP.",
 	},
-
 	shortcircuit: {
 		name: "Short Circuit",
 		desc: "If the current terrain is Electric Terrain and the user is grounded, this move has its priority increased by 1.",
 		shortDesc: "User on Electric Terrain: +1 priority.",
 	},
-
 	scuttledship: {
 		name: "Scuttled Ship",
 		desc: "Power increases by 1.25x if the target has less than maximum HP, and 1.5x if it has less than or equal to half of its maximum HP remaining.",
 		shortDesc: "Power increases by 1.25x-1.5x as target's HP is lowered",
 	},
-
 	coldsoul: {
 		name: "Cold Soul",
 		desc: "100% chance to freeze the target. The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move.",
 		shortDesc: "Fails if the user takes damage before it hits. 100% frz",
 	},
-
 	steeldivebomber: {
 		name: "Steel Divebomber",
 		desc: "Damage is calculated using either the user's Defense or Special Defense stat, whichever is higher, as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
 		shortDesc: "Uses user's highest Def/Sp. Def as Atk in damage calculation.",
 	},
-
 	risingvirtue: {
 		name: "Rising Virtue",
 		desc: "Damage is calculated using the user's highest stat as its Special Attack, including stat stage changes. Other effects that modify the Special Attack stat are used as normal. The user's highest stat is raised by 1 stage",
 		shortDesc: "User's highest stat is raised by 1. Uses user's highest stat as Sp. Atk in damage calculation.",
+	},
+	coldsneeze: {
+		name: "Cold Sneeze",
+		desc: "Has a 50% chance to poison the target.",
+		shortDesc: "50% chance to poison the target.",
 	},
 };

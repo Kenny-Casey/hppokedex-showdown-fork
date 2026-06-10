@@ -5992,7 +5992,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
-		flags: {},
+		flags: {breakable: 1},
 		name: "Thermotherapy",
 		rating: 3.5,
 		num: -1017,

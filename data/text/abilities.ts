@@ -2387,4 +2387,14 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "This Pokemon restores 1/2 of the damage dealt, rounded down, when attacking using a Ghost-type or Water-Type move.",
 		shortDesc: "This Pokemon heals 1/2 damage dealt when using Ghost-type or Water-type attacks.",
 	},
+	hyperfixation: {
+		name: "Hyperfixation",
+		desc: "This Pokemon's attacks always go first against moves of the same priority.",
+		shortDesc: "This Pokemon always moves first in its priority bracket with attacking moves.",
+	},
+	thermotherapy: {
+		name: "Thermotherapy",
+		desc: "This Pokemon is immune to Fire-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Fire-type move..",
+		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Fire moves; immunity",
+	},
 };

@@ -21548,4 +21548,20 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 		isNonstandard: "HPPokedex",
 	},
+	coldsneeze: {
+		num: 1009,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Cold Sneeze",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1},
+		secondary: {
+			chance: 50,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Ice",
+	},	
 };

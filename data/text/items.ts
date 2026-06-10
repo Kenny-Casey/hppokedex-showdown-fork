@@ -2624,4 +2624,22 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Vile Vial",
 		shortDesc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
 	},
+
+	//HPPokedex items
+	baasphyxite: {
+        name: "Baasphyxite",
+		shortDesc: "If held by a Baasphyx, this item allows it to Mega Evolve in battle.",
+    },
+    reelingerite: {
+        name: "Reelingerite",
+		shortDesc: "If held by a Reelinger, this item allows it to Mega Evolve in battle.",
+    },
+    wavlenite: {
+        name: "Wavlenite",
+		shortDesc: "If held by a Wavleye, this item allows it to Mega Evolve in battle.",
+    },
+    styrafimite: {
+        name: "Styrafimite",
+		shortDesc: "If held by a Styrafim, this item allows it to Mega Evolve in battle.",
+    },
 };
