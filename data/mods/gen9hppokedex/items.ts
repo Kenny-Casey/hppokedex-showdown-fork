@@ -1,23 +1,23 @@
 export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
     baasphyxite: {
         inherit: true,
-        isNonstandard: "HPPokedex",
+        isNonstandard: null,
     },
     reelingerite: {
         inherit: true,
-        isNonstandard: "HPPokedex",
+        isNonstandard: null,
     },
     sablenite: {
         inherit: true,
         isNonstandard: null,
     },
-    sableniteheroguea: {
+    wavlenite: {
         inherit: true,
-        isNonstandard: "HPPokedex"
+        isNonstandard: null,
     },
     styrafimite: {
         inherit: true,
-        isNonstandard: "HPPokedex"
+        isNonstandard: null,
     },
 
 };

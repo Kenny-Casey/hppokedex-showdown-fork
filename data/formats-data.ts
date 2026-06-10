@@ -6260,67 +6260,54 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	cifluim: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	styrafim: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-	
 	styrafimmega: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-	
 	lambabel: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	asheap: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	baasphyx: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	baasphyxmega: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	eeglur: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	solesteelir: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	reelinger: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	reelingermega: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-	
 	clawtify: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	clawmmortal: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
@@ -6329,7 +6316,6 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	arthrogue: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
@@ -6338,162 +6324,130 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	hoovarctic: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	swimper: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	krilturn: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-	
 	gallidune: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	terracan: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	skorhaan: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	pyrotechnant: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	nitroglycerant: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	nucleant: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	chelystary: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	sedimentary: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	ankydoe: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	ankayoe: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	tirips: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	tiripspot: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	tiripshat: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	tiripscloak: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	tiripsflask: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	tiripsorb: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	cerberock: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	hydrock: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	krakentrap: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	calfloat: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	sumbaoar: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	buyoelago: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	innoculus: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	homunkylus: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	malhinculus: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	toillitrub: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	caldribub: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	cacaldrid: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	sanguidolon: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
@@ -6502,17 +6456,14 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	phleguard: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	melangel: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	cirnyx: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
@@ -6525,30 +6476,44 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	levianarctic: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	aggronheroguea: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
 	spiritombheroguea: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
-	sableyeheroguea: {
+	wavleye: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	wavleyemega: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	dustnee: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	tanookie: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	tanookraze: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	ursick: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
 
-	sableyeherogueamega: {
-		isNonstandard: "HPPokedex",
-		tier: "Illegal",
-	},
+
+
 
 };

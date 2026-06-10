@@ -8202,11 +8202,11 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 9,
 		isNonstandard: "HPPokedex",
 	},
-	sableniteheroguea: {
-		name: "Sablenite-Heroguea",
+	wavlenite: {
+		name: "Wavlenite",
 		spritenum: -1003,
-		megaStone: {"Sableye-Heroguea": "Sableye-Heroguea-Mega"},
-		itemUser: ["Sableye-Heroguea"],
+		megaStone: {"Wavleye": "Wavleye-Mega"},
+		itemUser: ["Wavleye"],
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
 		},

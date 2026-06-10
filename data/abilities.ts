@@ -5982,5 +5982,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 5,
 		num: -1016,
 		isNonstandard: "HPPokedex",
-	}
+	},
+	thermotherapy: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Fire') {
+				if (!this.heal(target.baseMaxhp / 4)) {
+					this.add('-immune', target, '[from] ability: Thermotherapy');
+				}
+				return null;
+			}
+		},
+		flags: {},
+		name: "Thermotherapy",
+		rating: 3.5,
+		num: -1017,
+		isNonstandard: "HPPokedex",
+	},
 };

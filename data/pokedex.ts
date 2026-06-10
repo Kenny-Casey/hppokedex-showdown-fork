@@ -21791,9 +21791,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		gen: 9,
 	},
 
-	sableyeheroguea: {
+	wavleye: {
 		num: -1048,
-		name: "Sableye-Heroguea",
+		name: "Wavleye",
 		types: ["Dark", "Water"],
 		baseStats: { hp: 50, atk: 80, def: 55, spa: 80, spd: 55, spe: 60 },
 		abilities: { 0: "Keen Eye", 1: "Hyperfixation", H: "Anticipation" },
@@ -21801,14 +21801,15 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 11,
 		color: "Blue",
 		eggGroups: ["Human-Like","Water 1"],
-		otherFormes: ["Sableye-Heroguea-Mega"],
-		formeOrder: ["Sableye-Heroguea", "Sableye-Heroguea-Mega"],
+		otherFormes: ["Wavleye-Mega"],
+		formeOrder: ["Wavleye", "Wavleye-Mega"],
+		gen: 9,
 	},
 
-	sableyeherogueamega: {
+	wavleyemega: {
 		num: -1048,
-		name: "Sableye-Heroguea-Mega",
-		baseSpecies: "Sableye-Heroguea",
+		name: "Wavleye-Mega",
+		baseSpecies: "Wavleye",
 		forme: "Mega",
 		types: ["Dark", "Water"],
 		baseStats: { hp: 50, atk: 80, def: 90, spa: 110, spd: 100, spe: 50 },
@@ -21817,7 +21818,70 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 79,
 		color: "Blue",
 		eggGroups: ["Human-Like","Water 1"],
-		requiredItem: "Sablenite-Heroguea",
-	}
+		requiredItem: "Wavlenite",
+		gen: 9,
+	},
+
+	dustnee: {
+		num: -1049,
+		name: "Dustnee",
+		types: ["Ground", "Fairy"],
+		baseStats: { hp: 55, atk: 35, def: 50, spa: 111, spd: 80, spe: 90 },
+		abilities: { 0: "Prankster", 1: "Sand Rush", H: "Huge Power" },
+		heightm: 0.78,
+		weightkg: 2.5,
+		color: "Brown",
+		eggGroups: ["Fairy","Field"],
+		gen: 9,
+	},
+
+	tanookie: {
+		num: -1050,
+		name: "Tanookie",
+		types: ["Fairy"],
+		baseStats: { hp: 58, atk: 52, def: 40, spa: 64, spd: 40, spe: 74 },
+		abilities: { 0: "Cheek Pouch", 1: "Reckless", H: "Gluttony" },
+		heightm: 0.4,
+		weightkg: 12.5,
+		color: "Pink",
+		evos: ["Tanookraze"],
+		eggGroups: ["Field"],
+		gen: 9,
+	},
+
+	tanookraze: {
+		num: -1051,
+		name: "Tanookraze",
+		types: ["Fairy", "Electric"],
+		baseStats: { hp: 78, atk: 102, def: 80, spa: 84, spd: 60, spe: 104 },
+		abilities: { 0: "Cheek Pouch", 1: "Reckless", H: "No Guard" },
+		heightm: 0.96,
+		weightkg: 18.2,
+		color: "Pink",
+		prevo: "Tanookie",
+		evoType: "useItem",
+		evoCondition: "Rare Candy",
+		eggGroups: ["Field"],
+		gen: 9,
+	},
+
+	ursick: {
+		num: -1052,
+		name: "Ursick",
+		types: ["Ice", "Poison"],
+		baseStats: { hp: 105, atk: 70, def: 80, spa: 130, spd: 80, spe: 45 },
+		abilities: { 0: "Thermotherapy", 1: "Slush Rush", H: "Poison Point" },
+		heightm: 2.55,
+		weightkg: 250,
+		color: "Purple",
+		prevo: "Cubchoo",
+		evoLevel: 30,
+		evoCondition: "while Poisoned",
+		eggGroups: ["Field"],
+		gen: 9,
+	},
+
+
+
 
 };

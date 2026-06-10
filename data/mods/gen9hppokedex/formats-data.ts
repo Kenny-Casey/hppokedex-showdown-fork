@@ -7499,72 +7499,58 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	//HPPokedex
-
     styrangel: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	cifluim: {
 		isNonstandard: "HPPokedex",
 		tier: "NFE",
 	},
-
 	styrafim: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-	
 	styrafimmega: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-	
 	lambabel: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	asheap: {
 		isNonstandard: "HPPokedex",
 		tier: "NFE",
 	},
-
 	baasphyx: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	baasphyxmega: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	eeglur: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	solesteelir: {
 		isNonstandard: "HPPokedex",
 		tier: "NFE",
 	},
-
 	reelinger: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	reelingermega: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-	
 	clawtify: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	clawmmortal: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
@@ -7573,7 +7559,6 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	arthrogue: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
@@ -7582,162 +7567,130 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	hoovarctic: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	swimper: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	krilturn: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-	
 	gallidune: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	terracan: {
 		isNonstandard: "HPPokedex",
 		tier: "NFE",
 	},
-
 	skorhaan: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	pyrotechnant: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	nitroglycerant: {
 		isNonstandard: "HPPokedex",
 		tier: "NFE",
 	},
-
 	nucleant: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	chelystary: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	sedimentary: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	ankydoe: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	ankayoe: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	tirips: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	tiripspot: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	tiripshat: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	tiripscloak: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	tiripsflask: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	tiripsorb: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	cerberock: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	hydrock: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	krakentrap: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	calfloat: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	sumbaoar: {
 		isNonstandard: "HPPokedex",
 		tier: "NFE",
 	},
-
 	buyoelago: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	innoculus: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	homunkylus: {
 		isNonstandard: "HPPokedex",
 		tier: "NFE",
 	},
-
 	malhinculus: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	toillitrub: {
 		isNonstandard: "HPPokedex",
 		tier: "LC",
 	},
-
 	caldribub: {
 		isNonstandard: "HPPokedex",
 		tier: "NFE",
 	},
-
 	cacaldrid: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	sanguidolon: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
@@ -7746,17 +7699,14 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	phleguard: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	melangel: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	cirnyx: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
@@ -7769,28 +7719,39 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "HPPokedex",
 		tier: "Uber",
 	},
-
 	levianarctic: {
 		isNonstandard: "HPPokedex",
 		tier: "Uber",
 	},
-
 	aggronheroguea: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
 	spiritombheroguea: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
-	sableyeheroguea: {
+	wavleye: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
-	sableyeherogueamega: {
+	wavleyemega: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	dustnee: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	tanookie: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	tanookraze: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	ursick: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
