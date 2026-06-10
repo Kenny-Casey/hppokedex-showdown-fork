@@ -5970,4 +5970,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -1015,
 		isNonstandard: "HPPokedex",
 	},
+	hyperfixation: {
+		onFractionalPriorityPriority: -1,
+		onFractionalPriority(priority, pokemon, target, move) {
+			if (move.category !== "Status") {
+				return 0.1;
+			}
+		},
+		flags: {},
+		name: "Hyperfixation",
+		rating: 5,
+		num: -1016,
+		isNonstandard: "HPPokedex",
+	}
 };

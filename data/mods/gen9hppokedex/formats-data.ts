@@ -2141,13 +2141,11 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	sableye :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	sableyemega :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	mawile :{
@@ -7787,6 +7785,15 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 
+	sableyeheroguea: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+
+	sableyeherogueamega: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
 
 
 };

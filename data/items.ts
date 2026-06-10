@@ -8193,7 +8193,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	reelingerite: {
 		name: "Reelingerite",
 		spritenum: -1002,
-		megaStone: {"Reelinger":"Reelinger-Mega"},
+		megaStone: {"Reelinger": "Reelinger-Mega"},
 		itemUser: ["Reelinger"],
 		onTakeItem(item, source) {
 			return !item.megaStone?.[source.baseSpecies.baseSpecies];
@@ -8202,4 +8202,16 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 9,
 		isNonstandard: "HPPokedex",
 	},
+	sableniteheroguea: {
+		name: "Sablenite-Heroguea",
+		spritenum: -1003,
+		megaStone: {"Sableye-Heroguea": "Sableye-Heroguea-Mega"},
+		itemUser: ["Sableye-Heroguea"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -1003,
+		gen: 9, 
+		isNonstandard: "HPPokedex",
+	}
 };

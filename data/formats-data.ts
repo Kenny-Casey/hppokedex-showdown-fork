@@ -6541,4 +6541,14 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 
+	sableyeheroguea: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+
+	sableyeherogueamega: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+
 };

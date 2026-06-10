@@ -21790,4 +21790,35 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Amorphous"],
 		gen: 9,
 	},
+
+	sableyeheroguea: {
+		num: 302,
+		name: "Sableye-Heroguea",
+		baseSpecies: "Sableye",
+		types: ["Dark", "Water"],
+		baseStats: { hp: 50, atk: 80, def: 55, spa: 80, spd: 55, spe: 60 },
+		abilities: { 0: "Keen Eye", 1: "Hyperfixation", H: "Anticipation" },
+		heightm: 0.5,
+		weightkg: 11,
+		color: "Blue",
+		eggGroups: ["Human-Like","Water 1"],
+		otherFormes: ["Sableye-Heroguea-Mega"],
+		formeOrder: ["Sableye-Heroguea", "Sableye-Heroguea-Mega"],
+	},
+
+	sableyeherogueamega: {
+		num: 302,
+		name: "Sableye-Heroguea-Mega",
+		baseSpecies: "Sableye-Heroguea",
+		forme: "Mega",
+		types: ["Dark", "Water"],
+		baseStats: { hp: 50, atk: 80, def: 90, spa: 110, spd: 100, spe: 50 },
+		abilities: { 0: "Hyperfixation" },
+		heightm: 0.5,
+		weightkg: 79,
+		color: "Blue",
+		eggGroups: ["Human-Like","Water 1"],
+		requiredItem: "Sablenite-Heroguea",
+	}
+
 };
