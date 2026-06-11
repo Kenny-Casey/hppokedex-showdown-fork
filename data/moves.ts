@@ -6400,6 +6400,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		ignoreImmunity: true,
 		onTry(source, target) {
 			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			var futureType = 'Psychic';
+			if(source.ability === 'eyeofmalice'){
+				futureType='Dark';
+			}
 			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
 				move: 'futuresight',
 				source,
@@ -6413,7 +6417,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					flags: { allyanim: 1, metronome: 1, futuremove: 1 },
 					ignoreImmunity: false,
 					effectType: 'Move',
-					type: 'Psychic',
+					type: futureType,
 				},
 			});
 			this.add('-start', source, 'move: Future Sight');
