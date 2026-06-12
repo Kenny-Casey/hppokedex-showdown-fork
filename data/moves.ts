@@ -6400,6 +6400,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		ignoreImmunity: true,
 		onTry(source, target) {
 			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			//HPPokedex change
 			var futureType = 'Psychic';
 			if(source.ability === 'eyeofmalice'){
 				futureType='Dark';
