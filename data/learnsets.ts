@@ -102815,7 +102815,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			flashcannon: ["9M"],
 		},
 	}, 
-	wavleyeheroguea: {
+	wavleye: {
 		learnset: {
 			aerialace: ["9M"],
 			astonish: ["9M"],

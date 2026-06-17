@@ -5687,10 +5687,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "HPPokedex",
 	},
 	kickback:{
-		onAfterMove(source, target, move) {
-			if(move.category !== 'Status'){
-				source.switchFlag = true;
-			};
+		onSourceDamagingHit(damage, target, source, move) {
+			source.switchFlag = true;	
 		},
 		flags: {},
 		name: "Kickback",

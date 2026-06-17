@@ -28,7 +28,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9 HPPokedex] OU",
 		desc: "Test",
 		mod: 'gen9hppokedex',
-		ruleset: ['Standard','+HPPokedex'],
+		ruleset: ['Standard','+HPPokedex', 'Terastal Clause'],
 	},
 
 	// S/V Singles
