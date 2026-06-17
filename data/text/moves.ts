@@ -7697,8 +7697,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Damage is calculated using the user's highest stat as its Special Attack, including stat stage changes. Other effects that modify the Special Attack stat are used as normal. The user's highest stat is raised by 1 stage",
 		shortDesc: "User's highest stat is raised by 1. Uses user's highest stat as Sp. Atk in damage calculation.",
 	},
-	coldsneeze: {
-		name: "Cold Sneeze",
+	frostysneeze: {
+		name: "Frosty Sneeze",
 		desc: "Has a 50% chance to poison the target.",
 		shortDesc: "50% chance to poison the target.",
 	},

@@ -21329,12 +21329,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			const hpThresh=source.hp/source.maxhp;
 			this.heal(source.baseMaxhp / 2, source, source);
 			if (hpThresh>=0.67) {
+				target.trySetStatus('brn', target, move);
 				return;
 			}
-			return null;
 		},
-		target: "allAdjacentFoes",
-		status: 'brn',
+		target: "allAdjacentFoes", 
 		secondary: undefined,
 		type: "Fire",
 		contestType: "Clever",
@@ -21553,12 +21552,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 		isNonstandard: "HPPokedex",
 	},
-	coldsneeze: {
+	frostysneeze: {
 		num: 1009,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
-		name: "Cold Sneeze",
+		name: "Frosty Sneeze",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1},

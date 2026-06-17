@@ -21826,7 +21826,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: -1049,
 		name: "Dustnee",
 		types: ["Ground", "Fairy"],
-		baseStats: { hp: 55, atk: 35, def: 50, spa: 111, spd: 80, spe: 90 },
+		baseStats: { hp: 55, atk: 35, def: 70, spa: 111, spd: 90, spe: 90 },
 		abilities: { 0: "Prankster", 1: "Sand Rush", H: "Huge Power" },
 		heightm: 0.78,
 		weightkg: 2.5,
