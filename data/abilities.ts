@@ -5990,6 +5990,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return null;
 			}
 		},
+		onSetStatus(status, target, source, effect) {
+			if (status.id !== 'brn') return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: hermotherapy');
+			}
+			return false;
+		},
 		flags: {breakable: 1},
 		name: "Thermotherapy",
 		rating: 3.5,
