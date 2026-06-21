@@ -2171,8 +2171,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	aggronmega :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	meditite :{
@@ -4096,13 +4095,11 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	cubchoo :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 	},
 
 	beartic :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	cryogonal :{
