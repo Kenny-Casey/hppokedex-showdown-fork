@@ -2406,4 +2406,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "This Pokemon is immune to Fire-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Fire-type move..",
 		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Fire moves; immunity",
 	},
+	airhead: {
+		name: "Airhead",
+		desc:"This Pokemon is immune to Ground; ignores other Pokemon's stat stages when taking or doing damage",
+		shortDesc:"This Pokemon is immune to Ground; ignores other Pokemon's stat stages when taking or doing damage", 
+	},
 };
