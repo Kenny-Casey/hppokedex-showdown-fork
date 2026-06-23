@@ -7,6 +7,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
         inherit: true,
         isNonstandard: null,
     },
+    clodsite: {
+        inherit: true,
+        isNonstandard: null,
+    },
     eviolite: {
 		inherit: true,
 		onModifyDef(def, pokemon) {

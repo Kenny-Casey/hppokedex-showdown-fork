@@ -1386,18 +1386,15 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	wooper :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 	},
 
 	wooperpaldea :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 	},
 
 	quagsire :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	espeon :{
@@ -6796,8 +6793,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	clodsire :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	farigiraf :{
@@ -7752,6 +7748,9 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
+	clodsiremega: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
 
 };

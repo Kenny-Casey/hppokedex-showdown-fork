@@ -6038,4 +6038,27 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -1017,
 		isNonstandard: "HPPokedex",
 	},
+	airhead: {
+		onAnyModifyBoost(boosts, pokemon) {
+			const unawareUser = this.effectState.target;
+			if (unawareUser === pokemon) return;
+			if (unawareUser === this.activePokemon && pokemon === this.activeTarget) {
+				boosts['def'] = 0;
+				boosts['spd'] = 0;
+				boosts['evasion'] = 0;
+			}
+			if (pokemon === this.activePokemon && unawareUser === this.activeTarget) {
+				boosts['atk'] = 0;
+				boosts['def'] = 0;
+				boosts['spa'] = 0;
+				boosts['accuracy'] = 0;
+			}
+		},
+		// airborneness implemented in sim/pokemon.js:Pokemon#isGrounded
+		flags: { breakable: 1 },
+		name: "Airhead",
+		rating: 5,
+		num: -1018,
+	},
+	
 };

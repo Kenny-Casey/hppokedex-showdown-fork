@@ -6512,8 +6512,8 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-
-
-
-
+	clodsiremega: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
 };

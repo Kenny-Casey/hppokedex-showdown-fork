@@ -8213,5 +8213,17 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -1003,
 		gen: 9, 
 		isNonstandard: "HPPokedex",
-	}
+	},
+	clodsite: {
+		name: "Clodsite",
+		spritenum: -1004,
+		megaStone: {"Clodsire": "Clodsire-Mega"},
+		itemUser: ["Clodsire"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -1004,
+		gen: 9, 
+		isNonstandard: "HPPokedex",
+	},
 };

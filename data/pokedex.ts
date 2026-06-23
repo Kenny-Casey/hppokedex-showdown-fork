@@ -18743,6 +18743,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Wooper-Paldea",
 		evoLevel: 20,
 		eggGroups: ["Water 1", "Field"],
+		otherFormes: ["Clodsire-Mega"],
+		formeOrder: ["Clodsire", "Clodsire-Mega"],
 	},
 	farigiraf: {
 		num: 981,
@@ -21880,8 +21882,19 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 		gen: 9,
 	},
-
-
-
-
+	clodsiremega: {
+		num: 980,
+		name: "Clodsire-Mega",
+		baseSpecies: "Clodsire",
+		forme: "Mega",
+		types: ["Poison", "Ground"],
+		baseStats: { hp: 130, atk: 100, def: 95, spa: 45, spd: 140, spe: 20 },
+		abilities: { 0: "Airhead"},
+		heightm: 1.8,
+		weightkg: 223,
+		color: "Brown",
+		eggGroups: ["Water 1", "Field"],
+		requiredItem: "Clodsite",
+		gen: 9,
+	},
 };
