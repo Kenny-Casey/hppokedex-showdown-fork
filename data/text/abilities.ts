@@ -2411,4 +2411,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc:"This Pokemon is immune to Ground; ignores other Pokemon's stat stages when taking or doing damage",
 		shortDesc:"This Pokemon is immune to Ground; ignores other Pokemon's stat stages when taking or doing damage", 
 	},
+	figureskater: {
+		name: "Figure Skater",
+		desc: "When switching in, the holder is unaffected by hazards on its side of the field.",
+		shortDesc: "When switching in, the holder is unaffected by hazards on its side of the field.",
+	},
 };

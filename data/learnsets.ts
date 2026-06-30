@@ -102868,7 +102868,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			outrage: ["9M"],
 			protect: ["9M"],
 			raindance: ["9M"],
-			recover: ["9M"],
 			rest: ["9M"],
 			reversal: ["9M"],
 			roar: ["9M"],
