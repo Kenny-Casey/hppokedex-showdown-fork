@@ -3,5 +3,8 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
         inherit: true,
         evos: ["Krakentrap"],
     },
-
+    cinccino: {
+        inherit: true,
+        evos: ["Cincchiller"],
+    },
 };

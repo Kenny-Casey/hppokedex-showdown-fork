@@ -752,7 +752,8 @@ export class DexSpecies {
 			species = this.get(species.prevo);
 			if (species.gen > Math.max(2, this.dex.gen)) return null;
 			return species;
-		} else if (species.changesFrom && species.baseSpecies !== 'Kyurem') {
+			//HPPokedex Change: Make Tirips not inherit moves
+		} else if (species.changesFrom && species.baseSpecies !== 'Kyurem' && species.baseSpecies !== 'Tirips') {
 			// For Pokemon like Rotom and Necrozma whose movesets are extensions are their base formes
 			return this.get(species.changesFrom);
 		} else if (

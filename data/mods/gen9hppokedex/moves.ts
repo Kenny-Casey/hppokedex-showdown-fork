@@ -3,13 +3,19 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         inherit: true,
         isNonstandard: null,
     },
-    
     octolock: {
         inherit: true,
         isNonstandard: null,
     },
-
     stormthrow: {
+        inherit: true,
+        isNonstandard: null,
+    },
+    healorder: {
+        inherit: true,
+        isNonstandard: null,
+    },
+    aromatherapy: {
         inherit: true,
         isNonstandard: null,
     },

@@ -5699,7 +5699,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	//Hppokedex changes
 	soulsiphon: {
 		onModifyMove(move, pokemon) {
-			if (move.type=="Ghost") {
+			if (move.type === "Ghost") {
 				move.drain=[1,2];
 			}
 		},
@@ -5710,10 +5710,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "HPPokedex",
 	},
 	flee:{
-		onAfterMove(source, target, move) {
-			if(move.category == 'Status'){
-				source.switchFlag = true;
-			};
+		onModifyMove(move){
+			if(move.category === "Status"){
+				move.selfSwitch=true;
+			}
 		},
 		flags: {},
 		name: "Flee",
@@ -5722,9 +5722,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "HPPokedex",
 	},
 	kickback:{
-		onSourceDamagingHit(damage, target, source, move) {
-			source.switchFlag = true;	
+		onModifyMove(move){
+			if(move.category !== "Status"){
+				move.selfSwitch=true;
+			}
 		},
+		
 		flags: {},
 		name: "Kickback",
 		rating: 3.5,
@@ -5985,7 +5988,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		flags: {},
+		flags: {breakable: 1},
 		name: "Billowing Smoke",
 		rating: 5,
 		num: -1014,
@@ -5993,7 +5996,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	soulreaper: {
 		onModifyMove(move, pokemon) {
-			if (move.type=="Ghost"||move.type=="Water") {
+			if (move.type === "Ghost"||move.type === "Water") {
 				move.drain=[1,2];
 			}
 		},
@@ -6060,5 +6063,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 5,
 		num: -1018,
 	},
-	
+	figureskater: {
+		// Hazard Immunity implemented in moves.ts
+		name: "Figure Skater",
+		rating: 4,
+		num: -1019,
+	},	
 };

@@ -7662,8 +7662,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		//HPPokedex changes
 	flaminginsulation: {
 		name: "Flaming Insulation",
-		desc: "The user restores 1/2 of its maximum HP. All opponents are burned if 1/3 or less is healed.",
-		shortDesc: "Heals 50%. Burns foe(s) if under 33% healed",
+		desc: "The user restores 1/3rd of its maximum HP. All opponents are burned if 1/3 or less is healed.",
+		shortDesc: "Heals 33%. Burns foe(s) if under 33% healed",
 	},
 	atomichoney: {
 		name: "Atomic Honey",
@@ -7707,7 +7707,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	frostysneeze: {
 		name: "Frosty Sneeze",
-		desc: "Has a 50% chance to poison the target.",
-		shortDesc: "50% chance to poison the target.",
+		desc: "Has a 30% chance to badly poison the target.",
+		shortDesc: "30% chance to badly poison the target.",
 	},
 };

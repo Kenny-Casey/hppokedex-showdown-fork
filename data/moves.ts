@@ -7236,7 +7236,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-sidestart', side, 'move: G-Max Steelsurge');
 			},
 			onSwitchIn(pokemon) {
-				if (pokemon.hasItem('heavydutyboots')) return;
+				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('figureskater')) return;
 				// Ice Face and Disguise correctly get typed damage from Stealth Rock
 				// because Stealth Rock bypasses Substitute.
 				// They don't get typed damage from Steelsurge because Steelsurge doesn't,
@@ -17529,7 +17529,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.effectState.layers++;
 			},
 			onSwitchIn(pokemon) {
-				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
+				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('figureskater')) return;
 				const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
 				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
 			},
@@ -17837,7 +17837,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-sidestart', side, 'move: Stealth Rock');
 			},
 			onSwitchIn(pokemon) {
-				if (pokemon.hasItem('heavydutyboots')) return;
+				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('figureskater')) return;
 				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
 			},
@@ -17962,7 +17962,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-sidestart', side, 'move: Sticky Web');
 			},
 			onSwitchIn(pokemon) {
-				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
+				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('figureskater')) return;
 				this.add('-activate', pokemon, 'move: Sticky Web');
 				this.boost({ spe: -1 }, pokemon, pokemon.side.foe.active[0], this.dex.getActiveMove('stickyweb'));
 			},
@@ -19787,7 +19787,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hasType('Poison')) {
 					this.add('-sideend', pokemon.side, 'move: Toxic Spikes', `[of] ${pokemon}`);
 					pokemon.side.removeSideCondition('toxicspikes');
-				} else if (pokemon.hasType('Steel') || pokemon.hasItem('heavydutyboots')) {
+				} else if (pokemon.hasType('Steel') || pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('figureskater')) {
 					// do nothing
 				} else if (this.effectState.layers >= 2) {
 					pokemon.trySetStatus('tox', pokemon.side.foe.active[0]);
@@ -21327,7 +21327,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { snatch: 1, heal: 1, metronome: 1 },
 		onTry(source, target, move) {
 			const hpThresh=source.hp/source.maxhp;
-			this.heal(source.baseMaxhp / 2, source, source);
+			this.heal(source.baseMaxhp / 3, source, source);
 			if (hpThresh>=0.67) {
 				target.trySetStatus('brn', target, move);
 				return;
@@ -21496,7 +21496,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		onBasePower(basePower, pokemon, target, contact) {
-			if(target.hp==1){
+			if(target.hp === 1){
 				return this.chainModify(2);
 			}
 			else if (target.hp * 2 <= target.maxhp) {
@@ -21562,8 +21562,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1},
 		secondary: {
-			chance: 50,
-			status: 'psn',
+			chance: 30,
+			status: 'tox',
 		},
 		target: "normal",
 		type: "Ice",

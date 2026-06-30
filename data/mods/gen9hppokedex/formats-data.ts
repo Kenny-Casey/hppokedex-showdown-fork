@@ -3857,13 +3857,11 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	minccino :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 	},
 
 	cinccino :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	gothita :{
@@ -7706,7 +7704,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 	centignet: {
 		isNonstandard: "HPPokedex",
-		tier: "OU",
+		tier: "Illegal",
 	},
 	titanicrown: {
 		isNonstandard: "HPPokedex",
@@ -7752,5 +7750,12 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
-
+	cincchiller: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	scortoat: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
 };

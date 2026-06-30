@@ -14,12 +14,12 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
     eviolite: {
 		inherit: true,
 		onModifyDef(def, pokemon) {
-			if (pokemon.baseSpecies.nfe || pokemon.baseSpecies.id === 'grapploct') {
+			if (pokemon.baseSpecies.nfe || pokemon.baseSpecies.id === 'grapploct' || pokemon.baseSpecies.id === 'cinccino') {
 				return this.chainModify(1.5);
 			}
 		},
 		onModifySpD(spd, pokemon) {
-			if (pokemon.baseSpecies.nfe || pokemon.baseSpecies.id === 'grapploct') {
+			if (pokemon.baseSpecies.nfe || pokemon.baseSpecies.id === 'grapploct' || pokemon.baseSpecies.id === 'cinccino') {
 				return this.chainModify(1.5);
 			}
 		},
