@@ -21138,7 +21138,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	reelinger: {
 		num: -1008,
 		name: "Reelinger",
-		types: ["Water ","Ghost"],
+		types: ["Water","Ghost"],
 		baseStats: { hp: 130, atk: 80, def: 100, spa: 80, spd: 100, spe: 40 },
 		abilities: { 0: "Torrent", H: "Soul Siphon"},
 		heightm: 2.0,
@@ -21156,7 +21156,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Reelinger-Mega",
 		baseSpecies: "Reelinger",
 		forme: "Mega",
-		types: ["Water ","Ghost"],
+		types: ["Water","Ghost"],
 		baseStats: { hp: 130, atk: 100, def: 130, spa: 130, spd: 130, spe: 10 },
 		abilities: { 0:"Soul Reaper" },
 		heightm: 2.0,
@@ -21223,7 +21223,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	honows: {
 		num: -1013,
 		name: "Honows",
-		types: ["Ice ","Flying"],
+		types: ["Ice","Flying"],
 		baseStats: { hp: 45, atk: 45, def: 50, spa: 45, spd: 60, spe: 45 },
 		abilities: { 0: "Big Pecks", 1: "Snow Cloak", H: "Stakeout" },
 		heightm: 0.5,
@@ -21236,7 +21236,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	hoovarctic: {
 		num: -1014,
 		name: "Hoovarctic",
-		types: ["Ice ","Flying"],
+		types: ["Ice","Flying"],
 		baseStats: { hp: 80, atk: 80, def: 70, spa: 80, spd: 110, spe: 80 },
 		abilities: { 0: "Fluffy", 1: "Snow Cloak", H: "Stakeout" },
 		heightm: 0.7,
@@ -21597,7 +21597,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	homunkylus: {
 		num: -1035,
 		name: "Homunkylus",
-		types: ["Fighting ","Psychic"],
+		types: ["Fighting","Psychic"],
 		baseStats: { hp: 90, atk: 95, def: 70, spa: 95, spd: 70, spe: 45 },
 		abilities: { 0: "Super Luck", H: "Serene Grace" },
 		heightm: 1.8,
@@ -21668,7 +21668,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	sanguidolon: {
 		num: -1040,
 		name: "Sanguidolon",
-		types: ["Steel ","Fighting"],
+		types: ["Steel","Fighting"],
 		baseStats: { hp: 100, atk: 100, def: 150, spa: 100, spd: 60, spe: 60 },
 		abilities: { 0: "Virtue of Fortitude" },
 		heightm: 2.0,
@@ -21680,7 +21680,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	chloravenge: {
 		num: -1041,
 		name: "Chloravenge",
-		types: ["Steel ","Dark"],
+		types: ["Steel","Dark"],
 		baseStats: { hp: 100, atk: 150, def: 60, spa: 100, spd: 60, spe: 100 },
 		abilities: { 0: "Virtue of Justice" },
 		heightm: 2.0,
@@ -21692,7 +21692,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	phleguard: {
 		num: -1042,
 		name: "Phleguard",
-		types: ["Steel ","Psychic"],
+		types: ["Steel","Psychic"],
 		baseStats: { hp: 100, atk: 60, def: 100, spa: 150, spd: 100, spe: 60 },
 		abilities: { 0: "Virtue of Prudence" },
 		heightm: 2.0,
@@ -21704,7 +21704,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	melangel: {
 		num: -1043,
 		name: "Melangel",
-		types: ["Steel ","Fairy"],
+		types: ["Steel","Fairy"],
 		baseStats: { hp: 100, atk: 60, def: 60, spa: 100, spd: 150, spe: 100 },
 		abilities: { 0: "Virtue of Temperance" },
 		heightm: 2.0,
@@ -21752,7 +21752,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	levianarctic: {
 		num: -1047,
 		name: "Levianarctic",
-		types: ["Ice ","Ghost"],
+		types: ["Ice","Ghost"],
 		baseStats: { hp: 170, atk: 120, def: 135, spa: 100, spd: 135, spe: 10 },
 		abilities: { 0: "Goliath" },
 		heightm: 15.0,
