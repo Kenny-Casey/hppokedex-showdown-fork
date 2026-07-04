@@ -5700,7 +5700,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	soulsiphon: {
 		onModifyMove(move, pokemon) {
 			if (move.type === "Ghost") {
-				move.drain=[1,2];
+				move.drain=[1,3];
 			}
 		},
 		flags: {},
@@ -5997,7 +5997,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	soulreaper: {
 		onModifyMove(move, pokemon) {
 			if (move.type === "Ghost"||move.type === "Water") {
-				move.drain=[1,2];
+				move.drain=[1,3];
 			}
 		},
 		flags: {},

@@ -2318,8 +2318,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	//HPPokedex Changes
 	soulsiphon: {
 		name: "Soul Siphon",
-		desc: "This Pokemon restores 1/2 of the damage dealt, rounded down, when attacking using a Ghost-type move.",
-		shortDesc: "This Pokemon heals 1/2 damage dealt when using Ghost-type attacks.",
+		desc: "This Pokemon restores 1/3rd of the damage dealt, rounded down, when attacking using a Ghost-type move.",
+		shortDesc: "This Pokemon heals 1/3rd damage dealt when using Ghost-type attacks.",
 	},
 	flee: {
 		name: "Flee",
@@ -2393,8 +2393,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	soulreaper: {
 		name: "Soul Reaper",
-		desc: "This Pokemon restores 1/2 of the damage dealt, rounded down, when attacking using a Ghost-type or Water-Type move.",
-		shortDesc: "This Pokemon heals 1/2 damage dealt when using Ghost-type or Water-type attacks.",
+		desc: "This Pokemon restores 1/3rd of the damage dealt, rounded down, when attacking using a Ghost-type or Water-Type move.",
+		shortDesc: "This Pokemon heals 1/3rd damage dealt when using Ghost-type or Water-type attacks.",
 	},
 	hyperfixation: {
 		name: "Hyperfixation",

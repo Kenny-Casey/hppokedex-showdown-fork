@@ -186,8 +186,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	pikachu :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	pikachucosplay :{
@@ -2992,8 +2991,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	spiritomb :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	gible :{

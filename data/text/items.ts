@@ -2642,4 +2642,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
         name: "Styrafimite",
 		shortDesc: "If held by a Styrafim, this item allows it to Mega Evolve in battle.",
     },
+	clodsite: {
+		name: "Clodsite",
+		shortDesc: "If held by a Clodsire, this item allows it to Mega Evolve in battle.",
+	},
 };
