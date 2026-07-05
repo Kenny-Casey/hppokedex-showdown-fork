@@ -21455,11 +21455,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		onModifyMove(move, pokemon) {
-			const bestStat = pokemon.getBestStat(false, true);
+			const bestStat = pokemon.getBestStat(true, true);
 			move.overrideOffensiveStat=bestStat;
 		},
 		onAfterHit(target, source, move) {
-			const bestStat = source.getBestStat(false, true);
+			const bestStat = source.getBestStat(true, true);
 			this.boost({ [bestStat]: 1 }, source);
 		},
 		target: "normal",
