@@ -5216,6 +5216,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				boosts['atk'] = 0;
 				boosts['def'] = 0;
 				boosts['spa'] = 0;
+				//HPPokedex Change
+				boosts['spd'] = 0;
 				boosts['accuracy'] = 0;
 			}
 		},
@@ -6054,6 +6056,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				boosts['atk'] = 0;
 				boosts['def'] = 0;
 				boosts['spa'] = 0;
+				boosts['spd'] = 0;
 				boosts['accuracy'] = 0;
 			}
 		},
