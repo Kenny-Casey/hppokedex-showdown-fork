@@ -21567,5 +21567,24 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Ice",
+		isNonstandard: "HPPokedex",
 	},	
+	chargingcrescentkick: {
+		num: 1010,
+		accuracy: 90,
+		basePower: 20,
+		basePowerCallback(pokemon, target, move) {
+			return 20 * move.hit;
+		},
+		category: "Physical",
+		name: "Charging Crescent Kick",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		multihit: 3,
+		multiaccuracy: true,
+		target: "normal",
+		type: "Electric",
+		isNonstandard: "HPPokedex",
+	},
 };

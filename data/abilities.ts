@@ -6072,4 +6072,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: -1019,
 	},	
+	flytrap: {
+		onHit(target, source, move) {
+			if(move.selfSwitch === true && !source.hasAbility('flytrap') && !source.hasAbility('longreach') && !source.hasItem('protectivepads') ){
+				move.selfSwitch=false;
+				this.damage(source.baseMaxhp / 8, source, target);
+			}
+
+		},
+		name: "Fly Trap",
+		rating: 5,
+		num: -1020,
+		flags: { breakable: 1 },
+	},
 };

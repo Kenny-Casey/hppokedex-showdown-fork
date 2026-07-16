@@ -6524,4 +6524,17 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
+	pricktoad: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	moguaro: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	tropecetary: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	
 };

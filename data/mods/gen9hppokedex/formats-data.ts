@@ -2137,11 +2137,13 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	sableye :{
-		tier: "OU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 
 	sableyemega :{
-		tier: "OU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 
 	mawile :{
@@ -7702,7 +7704,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 	centignet: {
 		isNonstandard: "HPPokedex",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	titanicrown: {
 		isNonstandard: "HPPokedex",
@@ -7753,6 +7755,18 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	scortoat: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	pricktoad: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	moguaro: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	tropecetary: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},

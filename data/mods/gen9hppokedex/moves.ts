@@ -19,4 +19,17 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         inherit: true,
         isNonstandard: null,
     },
+    tropkick: {
+        inherit: true,
+        basePower: 85,
+    },
+    signalbeam: {
+        inherit: true,
+    },
+    silverwind: {
+        inherit: true,
+    },
+    geargrind: {
+        inherit: true,
+    },
 };

@@ -28,10 +28,6 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
         inherit: true,
         isNonstandard: null,
     },
-    sablenite: {
-        inherit: true,
-        isNonstandard: null,
-    },
     wavlenite: {
         inherit: true,
         isNonstandard: null,

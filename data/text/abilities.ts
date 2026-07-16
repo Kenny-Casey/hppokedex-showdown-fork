@@ -2416,4 +2416,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "When switching in, the holder is unaffected by hazards on its side of the field.",
 		shortDesc: "When switching in, the holder is unaffected by hazards on its side of the field.",
 	},
+	flytrap: {
+		name: "Flytrap",
+		desc: "Switch moves that target this Pokemon no longer switch and instead damage the user. Pokemon with Flytrap, Long Reach, or Protective Pads ignore this ability.",
+		shortDesc: "Switch moves that target this Pokemon no longer switch and instead damage the user.",
+	},
 };
