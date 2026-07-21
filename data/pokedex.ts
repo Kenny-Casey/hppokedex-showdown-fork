@@ -18743,7 +18743,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Wooper-Paldea",
 		evoLevel: 20,
 		eggGroups: ["Water 1", "Field"],
-		otherFormes: ["Clodsire-Mega"],
+		otherFormes: ["Clodsire-Mega", "Clodsire-Mega-Popped"],
 		formeOrder: ["Clodsire", "Clodsire-Mega", "Clodsire-Mega-Popped"],
 	},
 	farigiraf: {
@@ -21893,7 +21893,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	},
 	clodsiremegapopped: {
 		num: 980,
-		name: "Clodsire",
+		name: "Clodsire-Mega-Popped",
 		baseSpecies: "Clodsire",
 		forme: "Mega-Popped",
 		types: ["Poison", "Ground"],
