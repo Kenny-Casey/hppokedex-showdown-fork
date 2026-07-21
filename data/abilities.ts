@@ -6049,6 +6049,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (target.airheadpopped) return;
 			if (effect?.effectType === 'Move' ) {
 				target.airheadpopped = true;
+				if(['clodsiremega'].includes(target.species.id)){
+					const speciesid ='Clodsire-Mega-Popped';
+					target.formeChange(speciesid, this.effect, true);
+				}
 			}
 		},
 		onAnyModifyBoost(boosts, pokemon) {
