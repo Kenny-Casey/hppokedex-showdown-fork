@@ -6044,6 +6044,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "HPPokedex",
 	},
 	airhead: {
+		onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+			if (target.airheadpopped) return;
+			if (effect?.effectType === 'Move' ) {
+				target.airheadpopped = true;
+				if(['clodsiremega'].includes(target.species.id)){
+					const speciesid ='Clodsire-Mega-Popped';
+					target.formeChange(speciesid, this.effect, true);
+				}
+			}
+		},
 		onAnyModifyBoost(boosts, pokemon) {
 			const unawareUser = this.effectState.target;
 			if (unawareUser === pokemon) return;
@@ -6060,6 +6071,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				boosts['accuracy'] = 0;
 			}
 		},
+		
 		// airborneness implemented in sim/pokemon.js:Pokemon#isGrounded
 		flags: { breakable: 1 },
 		name: "Airhead",

@@ -262,7 +262,7 @@ export class Pokemon {
 	shieldBoost: boolean;
 	syrupTriggered: boolean;
 	stellarBoostedTypes: string[];
-
+	airheadpopped: boolean;
 	/** Have this pokemon's Start events run yet? (Start events run every switch-in) */
 	isStarted: boolean;
 	duringMove: boolean;
@@ -480,6 +480,7 @@ export class Pokemon {
 		this.swordBoost = false;
 		this.shieldBoost = false;
 		this.syrupTriggered = false;
+		this.airheadpopped = false;
 		this.stellarBoostedTypes = [];
 		this.isStarted = false;
 		this.duringMove = false;
@@ -2158,7 +2159,8 @@ export class Pokemon {
 		if (item === 'ironball') return true;
 		// If a Fire/Flying type uses Burn Up and Roost, it becomes ???/Flying-type, but it's still grounded.
 		if (!negateImmunity && this.hasType('Flying') && !(this.hasType('???') && 'roost' in this.volatiles)) return false;
-		if (this.hasAbility(['levitate', 'eelevate', 'airhead']) && !this.battle.suppressingAbility(this)) return null;
+		if (this.hasAbility(['levitate', 'eelevate']) && !this.battle.suppressingAbility(this)) return null;
+		if (this.hasAbility(['airhead']) && !this.battle.suppressingAbility(this)) return this.airheadpopped;
 		if ('magnetrise' in this.volatiles) return false;
 		if ('telekinesis' in this.volatiles) return false;
 		return item !== 'airballoon';

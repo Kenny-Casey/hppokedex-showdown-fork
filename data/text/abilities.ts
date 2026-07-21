@@ -2408,8 +2408,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	airhead: {
 		name: "Airhead",
-		desc:"This Pokemon is immune to Ground; ignores other Pokemon's stat stages when taking or doing damage",
-		shortDesc:"This Pokemon is immune to Ground; ignores other Pokemon's stat stages when taking or doing damage", 
+		desc: "This Pokemon is immune to Ground; ignores other Pokemon's stat stages when taking or doing damage.",
+		shortDesc: "This Pokemon is immune to Ground; ignores other Pokemon's stat stages when taking or doing damage. Pops when hit.", 
 	},
 	figureskater: {
 		name: "Figure Skater",

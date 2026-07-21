@@ -7750,6 +7750,10 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
+	clodsiremegapopped: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
 	cincchiller: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
@@ -7767,6 +7771,18 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	tropecetary: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	stuttlesnek: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	lyrikhiss: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	terracluse: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
