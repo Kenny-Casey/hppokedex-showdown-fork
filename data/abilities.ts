@@ -6044,18 +6044,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "HPPokedex",
 	},
 	airhead: {
-		onStart(target) {
-			if (!target.airheadpopped) {
-				target.addVolatile('airhead')
-			}
-		},
 		onDamagePriority: 1,
 		onDamage(damage, target, source, effect) {
 			if (target.airheadpopped) return;
 			if (effect?.effectType === 'Move' ) {
 				target.airheadpopped = true;
-				target.removeVolatile('airhead')
-				target.addVolatile('popped')
 			}
 		},
 		onAnyModifyBoost(boosts, pokemon) {
