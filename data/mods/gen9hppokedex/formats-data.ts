@@ -7774,4 +7774,16 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
+	stuttlesnek: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	lyrikhiss: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	terracluse: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
 };

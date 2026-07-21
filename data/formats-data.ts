@@ -6540,5 +6540,16 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
-	
+	stuttlesnek: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	lyrikhiss: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	terracluse: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
 };
