@@ -21893,7 +21893,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	},
 	clodsiremegapopped: {
 		num: 980,
-		name: "Clodsire-Mega-Popped",
+		name: "Clodsire",
 		baseSpecies: "Clodsire",
 		forme: "Mega-Popped",
 		types: ["Poison", "Ground"],
