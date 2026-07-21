@@ -6516,6 +6516,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
+	clodsiremegapopped: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
 	cincchiller: {
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",

@@ -7750,6 +7750,10 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
+	clodsiremegapopped: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
 	cincchiller: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
