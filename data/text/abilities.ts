@@ -2343,8 +2343,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cloudspewer: {
 		name: "Cloud Spewer",
-		desc: "This Pokemon's Flying-type moves deal have their damage multiplied by 1.25 and it receives 3/4 damage from supereffective attacks.",
-		shortDesc: "Flying moves deal 1.25x damage. Recieves 3/4 damage from supereffective attacks",
+		desc: "Holder's Flying-type attacks have 1.2x power.",
+		shortDesc: "Holder's Flying-type attacks have 1.2x power.",
 	},
 	eyeofmalice: {
 		name: "Eye of Malice",
@@ -2420,5 +2420,10 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Flytrap",
 		desc: "Switch moves that target this Pokemon no longer switch and instead damage the user. Pokemon with Flytrap, Long Reach, or Protective Pads ignore this ability.",
 		shortDesc: "Switch moves that target this Pokemon no longer switch and instead damage the user.",
+	},
+	phantasmalate: {
+		name: "Phantasmalate",
+		desc: "This Pokemon's Normal-type moves become Fire-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Fire type and have 1.2x power.",
 	},
 };

@@ -5448,8 +5448,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	komala :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	turtonator :{
@@ -7783,6 +7782,22 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	terracluse: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	komalaheroguea: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	nomala: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	sharbine: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	krushodo: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},

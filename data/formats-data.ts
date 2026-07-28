@@ -6552,4 +6552,20 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
+	komalaheroguea: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	nomala: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	sharbine: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	krushodo: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
 };
