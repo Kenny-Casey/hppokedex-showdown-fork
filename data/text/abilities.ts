@@ -2343,8 +2343,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cloudspewer: {
 		name: "Cloud Spewer",
-		desc: "This Pokemon's Flying-type moves deal have their damage multiplied by 1.25 and it receives 3/4 damage from supereffective attacks.",
-		shortDesc: "Flying moves deal 1.25x damage. Recieves 3/4 damage from supereffective attacks",
+		desc: "Holder's Flying-type attacks have 1.2x power.",
+		shortDesc: "Holder's Flying-type attacks have 1.2x power.",
 	},
 	eyeofmalice: {
 		name: "Eye of Malice",
