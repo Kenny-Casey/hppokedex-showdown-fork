@@ -5448,8 +5448,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	komala :{
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 
 	turtonator :{

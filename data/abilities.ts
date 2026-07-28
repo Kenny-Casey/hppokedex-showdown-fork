@@ -5771,27 +5771,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		isNonstandard: "HPPokedex",
 	},
 	cloudspewer: {
-		onSourceModifyDamage(damage, source, target, move) {
-			if (target.getMoveHitData(move).typeMod > 0) {
-				this.debug('Filter neutralize');
-				return this.chainModify(0.75);
+		onBasePowerPriority: 15,
+		onBasePower(basePower, user, target, move) {
+			if (move && move.type === 'Flying') {
+				return this.chainModify([4915, 4096]);
 			}
 		},
-				onModifyAtkPriority: 5,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Flying') {
-				this.debug('Transistor boost');
-				return this.chainModify([5120, 4096]);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Flying') {
-				this.debug('Transistor boost');
-				return this.chainModify([5120, 4096]);
-			}
-		},
-		flags: { breakable: 1 },
+		flags: {},
 		name: "Cloud Spewer",
 		rating: 4,
 		num: -1005,
