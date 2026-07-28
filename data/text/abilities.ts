@@ -2421,4 +2421,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "Switch moves that target this Pokemon no longer switch and instead damage the user. Pokemon with Flytrap, Long Reach, or Protective Pads ignore this ability.",
 		shortDesc: "Switch moves that target this Pokemon no longer switch and instead damage the user.",
 	},
+	phantasmalate: {
+		name: "Phantasmalate",
+		desc: "This Pokemon's Normal-type moves become Fire-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Fire type and have 1.2x power.",
+	},
 };
