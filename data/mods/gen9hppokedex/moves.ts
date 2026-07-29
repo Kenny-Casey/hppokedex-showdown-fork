@@ -35,4 +35,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
     powder: {
         inherit: true,
     },
+    grudge: {
+        inherit: true,
+    },
+    pursuit: {
+        inherit: true,
+    },
 };
