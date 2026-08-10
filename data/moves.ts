@@ -21676,7 +21676,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Psychic",
 		contestType: "Clever",
 	},
-	paradisepledege: {
+	paradisepledge: {
 		num: 1013,
 		accuracy: true,
 		basePower: 0,
