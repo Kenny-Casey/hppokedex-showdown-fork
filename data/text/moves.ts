@@ -7725,4 +7725,19 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "If an opposing Pokemon switches out this turn, this move hits that Pokemon before it leaves the field, even if it was not the original target. If the user moves after an opponent using Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch, but not Baton Pass, it will hit that opponent before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokemon does not become active until the end of the turn.",
 		shortDesc: "If a foe is switching out, hits it at 2x power.",
 	},
+	paradisepledge: {
+		name: "Paradise Pledge",
+		desc: "The user faints, and if the Pokemon brought out to replace it does not have full HP or has a non-volatile status condition, its HP is fully restored along with having any non-volatile status condition cured and it sets up Grassy Terrain. The replacement is sent out at the end of the turn, and the healing happens before hazards take effect. This effect continues until a Pokemon that meets either of these conditions switches in at the user's position or gets swapped into the position with Ally Switch. Fails if the user is the last unfainted Pokemon in its party.",
+		shortDesc: "User faints. Next hurt Pokemon is fully healed. Sets up Grassy Terrain",
+	},
+	soullure: {
+		name: "Soul Lure",
+		desc: "Until the end of the turn, all single-target attacks from the opposing side are redirected to the user. Such attacks are redirected to the user before they can be reflected by Magic Coat or the Magic Bounce Ability, or drawn in by the Lightning Rod or Storm Drain Abilities. Fails if it is not a Double Battle or Battle Royal. This effect is ignored while the user is under the effect of Sky Drop. User is immune to Ghost type moves this turn",
+		shortDesc: "The foes' moves target the user on the turn used. User is immune to Ghost type moves this turn",
+	},
+	swirlingsiphon: {
+		name: "Swirling Siphon",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+	},
 };

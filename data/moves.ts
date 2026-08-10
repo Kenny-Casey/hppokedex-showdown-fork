@@ -21590,7 +21590,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	dragonfangs: {
 		num: 1011,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 75,
 		category: "Physical",
 		name: "Dragon Fangs",
 		pp: 10,
@@ -21674,6 +21674,95 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Psychic",
+		contestType: "Clever",
+	},
+	paradisepledege: {
+		num: 1013,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Paradise Pledge",
+		pp: 10,
+		priority: 0,
+		flags: { snatch: 1, heal: 1, metronome: 1 },
+		onTryHit(source) {
+			if (!this.canSwitch(source.side)) {
+				this.attrLastMove('[still]');
+				this.add('-fail', source);
+				return this.NOT_FAIL;
+			}
+		},
+		selfdestruct: "ifHit",
+		slotCondition: 'paradisepledge',
+		condition: {
+			onSwitchIn(target) {
+				this.singleEvent('Swap', this.effect, this.effectState, target);
+			},
+			onSwap(target) {
+				if (!target.fainted && (target.hp < target.maxhp || target.status)) {
+					target.heal(target.maxhp);
+					target.clearStatus();
+					this.add('-heal', target, target.getHealth, '[from] move: Paradise Pledge');
+					this.field.setTerrain('grassyterrain');
+					target.side.removeSlotCondition(target, 'paradisepledge');
+				}
+			},
+		},
+		target: "self",
+		type: "Grass",
+		contestType: "Beautiful",
+	},
+	soullure: {
+		num: 1014,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Soul Lure",
+		pp: 20,
+		priority: 2,
+		flags: { noassist: 1, failcopycat: 1 },
+		volatileStatus: 'soullure',
+		onTry(source) {
+			return this.activePerHalf > 1;
+		},
+		condition: {
+			duration: 1,
+			onStart(target, source, effect) {
+				if (effect?.id === 'zpower') {
+					this.add('-singleturn', target, 'move: Soul Lure', '[zeffect]');
+				} else {
+					this.add('-singleturn', target, 'move: Soul Lure');
+				}
+			},
+			onFoeRedirectTargetPriority: 1,
+			onFoeRedirectTarget(target, source, source2, move) {
+				if (!this.effectState.target.isSkyDropped() && this.validTarget(this.effectState.target, source, move.target)) {
+					if (move.smartTarget) move.smartTarget = false;
+					if(move.type === 'Ghost') {
+						move.type = 'Normal';
+					}
+					this.debug("Soul Lure redirected target of move");
+					return this.effectState.target;
+				}
+			},
+		},
+		target: "self",
+		type: "Ghost",
+		zMove: { effect: 'clearnegativeboost' },
+		contestType: "Cute",
+	},
+	swirlingsiphon: {
+		num: 1015,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Swirling Siphon",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, heal: 1, metronome: 1 },
+		drain: [1, 2],
+		target: "normal",
+		type: "Water",
 		contestType: "Clever",
 	},
 };
