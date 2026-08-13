@@ -6568,4 +6568,80 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
+	wisce: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	danahan: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	wormir: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	chrystalis: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	saintiglaz: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	khullchis: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	hypsyriff: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	bubbafrog: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	anemester: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	anenite: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	anemizard: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	sloolooth: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	petrioth: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	akasloth: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	shuppetheroguea: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	strawnette: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	figgipiggi: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	shrubrute: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	arboaracious: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
 };

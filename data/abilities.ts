@@ -6105,4 +6105,26 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -1021,
 		isNonstandard: "HPPokedex",
 	},
+	terrify: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Terrify', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					const bestStat = target.getBestStat(true, true);
+					this.boost({ [bestStat]: -1 }, target, pokemon, null, true);
+				}
+			}
+		},
+		flags: {},
+		name: "Terrify",
+		rating: 5,
+		num: -1022,
+		isNonstandard: "HPPokedex",
+	},
 };

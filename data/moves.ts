@@ -21324,7 +21324,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Flaming Insulation",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, heal: 1, metronome: 1 },
+		flags: { snatch: 1, heal: 1, protect: 1 },
 		onTry(source, target, move) {
 			const hpThresh=source.hp/source.maxhp;
 			this.heal(source.baseMaxhp / 3, source, source);
@@ -21334,9 +21334,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		target: "allAdjacentFoes", 
-		secondary: undefined,
 		type: "Fire",
-		contestType: "Clever",
 		isNonstandard: "HPPokedex",
 	},
 	atomichoney: {
@@ -21347,14 +21345,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Atomic Honey",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
 			status: 'tox',
 		},
 		target: "normal",
 		type: "Fire",
-		contestType: "Clever",
 		isNonstandard: "HPPokedex",
 	},
 	twistedpaw: {
@@ -21392,7 +21389,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Mystery Potion",
 		pp: 15,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, allyanim: 1, metronome: 1, bullet: 1 },
+		flags: { protect: 1, mirror: 1, allyanim: 1, bullet: 1 },
 		onTryHit(target, source, move) {
 			if (source.isAlly(target)) {
 				move.basePower = 0;
@@ -21420,10 +21417,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 			}
 		},
-		secondary: undefined,
 		target: "normal",
 		type: "Poison",
-		contestType: "Cute",
 		isNonstandard: "HPPokedex",
 	},
 	steeldivebomber: {
@@ -21438,11 +21433,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('spd', false, true) > pokemon.getStat('def', false, true)) move.overrideOffensiveStat='spd';
 		},
-		secondary: undefined,
 		overrideOffensiveStat:'def',
 		target: "normal",
 		type: "Steel",
-		contestType: "Cute",
 		isNonstandard: "HPPokedex",
 	},
 	risingvirtue: {
@@ -21453,7 +21446,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Rising Virtue",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1},
 		onModifyMove(move, pokemon) {
 			const bestStat = pokemon.getBestStat(true, true);
 			move.overrideOffensiveStat=bestStat;
@@ -21474,16 +21467,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Short Circuit",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1 },
+		flags: {protect: 1, mirror: 1 },
 		onModifyPriority(priority, source, target, move) {
 			if (this.field.isTerrain('electricterrain') && source.isGrounded()) {
 				return priority + 1;
 			}
 		},
-		secondary: undefined,
 		target: "normal",
 		type: "Electric",
-		contestType: "Cool",
 		isNonstandard: "HPPokedex",
 	},
 	scuttledship: {
@@ -21494,7 +21485,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Scuttled Ship",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1 },
 		onBasePower(basePower, pokemon, target, contact) {
 			if(target.hp === 1){
 				return this.chainModify(2);
@@ -21503,10 +21494,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return this.chainModify([5120, 4096]);
 			}
 		},
-		secondary: undefined,
 		target: "normal",
 		type: "Water",
-		contestType: "Tough",
 		isNonstandard: "HPPokedex",
 	},
 	coldsoul: {
@@ -21549,7 +21538,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Ghost",
-		contestType: "Tough",
 		isNonstandard: "HPPokedex",
 	},
 	frostysneeze: {
@@ -21560,7 +21548,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Frosty Sneeze",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, metronome: 1},
+		flags: { protect: 1, mirror: 1},
 		secondary: {
 			chance: 30,
 			status: 'tox',
@@ -21580,7 +21568,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Charged Kicks",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1 },
 		multihit: 3,
 		multiaccuracy: true,
 		target: "normal",
@@ -21595,7 +21583,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Dragon Fangs",
 		pp: 10,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1, bite: 1 },
 		secondary: {
 			chance: 20,
 			boosts: {
@@ -21604,7 +21592,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Dragon",
-		contestType: "Tough",
 		isNonstandard: "HPPokedex",
 	},
 	mindspike: {
@@ -21624,7 +21611,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Mindspike",
 		pp: 20,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { contact: 1, protect: 1, mirror: 1 },
 		beforeTurnCallback(pokemon) {
 			for (const target of pokemon.foes()) {
 				target.addVolatile('mindspike');
@@ -21674,7 +21661,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "normal",
 		type: "Psychic",
-		contestType: "Clever",
 	},
 	paradisepledge: {
 		num: 1013,
@@ -21684,7 +21670,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Paradise Pledge",
 		pp: 10,
 		priority: 0,
-		flags: { snatch: 1, heal: 1, metronome: 1 },
+		flags: { snatch: 1, heal: 1},
 		onTryHit(source) {
 			if (!this.canSwitch(source.side)) {
 				this.attrLastMove('[still]');
@@ -21710,7 +21696,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "self",
 		type: "Grass",
-		contestType: "Beautiful",
+		isNonstandard: "HPPokedex",
 	},
 	soullure: {
 		num: 1014,
@@ -21748,8 +21734,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		target: "self",
 		type: "Ghost",
-		zMove: { effect: 'clearnegativeboost' },
-		contestType: "Cute",
+		isNonstandard: "HPPokedex",
 	},
 	swirlingsiphon: {
 		num: 1015,
@@ -21759,10 +21744,43 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Swirling Siphon",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, heal: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, heal: 1 },
 		drain: [1, 2],
 		target: "normal",
 		type: "Water",
-		contestType: "Clever",
+		isNonstandard: "HPPokedex",
+	},
+	sixshooter: {
+		num: 1016,
+		accuracy: 90,
+		basePower: 20,
+		category: "Physical",
+		name: "Six Shooter",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, bullet: 1 },
+		multihit: 6,
+		multiaccuracy: true,
+		smartTarget: true,
+		target: "normal",
+		type: "Rock",
+		isNonstandard: "HPPokedex",
+	},
+	stickybubbles: {
+		num: 1017,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Sticky Bubbles",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, reflectable: 1, mirror: 1 },
+		boosts: {
+			spe: -2,
+			evasion: -2,
+		},
+		target: "allAdjacentFoes",
+		type: "Water",
+		isNonstandard: "HPPokedex",
 	},
 };

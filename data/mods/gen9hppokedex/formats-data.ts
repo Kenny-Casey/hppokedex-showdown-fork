@@ -186,7 +186,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	pikachu :{
-		tier: "OU",
+		tier: "UU",
 	},
 
 	pikachucosplay :{
@@ -1393,7 +1393,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	quagsire :{
-		tier: "OU",
+		tier: "UU",
 	},
 
 	espeon :{
@@ -2165,11 +2165,11 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	aggron :{
-		tier: "OU",
+		tier: "UU",
 	},
 
 	aggronmega :{
-		tier: "OU",
+		tier: "UU",
 	},
 
 	meditite :{
@@ -2993,7 +2993,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	spiritomb :{
-		tier: "OU",
+		tier: "UU",
 	},
 
 	gible :{
@@ -3861,7 +3861,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	cinccino :{
-		tier: "OU",
+		tier: "UU",
 	},
 
 	gothita :{
@@ -4094,7 +4094,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	beartic :{
-		tier: "OU",
+		tier: "UU",
 	},
 
 	cryogonal :{
@@ -5448,7 +5448,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	komala :{
-		tier: "OU",
+		tier: "UU",
 	},
 
 	turtonator :{
@@ -5966,7 +5966,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	grapploct :{
-		tier: "OU",
+		tier: "UU",
 	},
 
 	sinistea :{
@@ -7798,6 +7798,82 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	krushodo: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	wisce: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	danahan: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	wormir: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	chrystalis: {
+		isNonstandard: "HPPokedex",
+		tier: "NFE",
+	},
+	saintiglaz: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	khullchis: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	hypsyriff: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	bubbafrog: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	anemester: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	anenite: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	anemizard: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	sloolooth: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	petrioth: {
+		isNonstandard: "HPPokedex",
+		tier: "NFE",
+	},
+	akasloth: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	shuppetheroguea: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	strawnette: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
+	figgipiggi: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	shrubrute: {
+		isNonstandard: "HPPokedex",
+		tier: "NFE",
+	},
+	arboaracious: {
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
