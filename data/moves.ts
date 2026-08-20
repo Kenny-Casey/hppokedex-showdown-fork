@@ -21446,19 +21446,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Rising Virtue",
 		pp: 5,
 		priority: 0,
-		flags: { protect: 1, mirror: 1},
 		onModifyMove(move, pokemon) {
 			const bestStat = pokemon.getBestStat(true, true);
 			move.overrideOffensiveStat=bestStat;
-			move.secondary=  {
-				chance: 100,
-				self: {
-					boosts: {
-						[bestStat]: 1,
-					},
-				},
-			}
 		},
+		onAfterHit(target, source, move) {
+			const bestStat = source.getBestStat(true, true);
+			this.boost({ [bestStat]: 1 }, source);
+		},
+		onAfterSubDamage(damage, target, source, move) {
+			const bestStat = source.getBestStat(true, true);
+			this.boost({ [bestStat]: 1 }, source);
+		},
+		flags: { protect: 1, mirror: 1},
 		target: "normal",
 		type: "Steel",
 		isNonstandard: "HPPokedex",
