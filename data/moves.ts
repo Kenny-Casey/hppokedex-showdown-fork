@@ -21328,7 +21328,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onTry(source, target, move) {
 			const hpThresh=source.hp/source.maxhp;
 			this.heal(source.baseMaxhp / 3, source, source);
-			if (hpThresh>=0.67 && !target.volatiles['substitute'] && !target.volatiles['protect']) {
+			if (hpThresh>=0.67 && !target.volatiles['substitute'] && !target.volatiles['protect'] && !target.volatiles['spikyshield'] && !target.side.getSideCondition('matblock')) {
 				target.trySetStatus('brn', target, move);
 				return;
 			}

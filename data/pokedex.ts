@@ -22255,7 +22255,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: -1077,
 		name: "Akasloth",
 		types: ["Grass", "Psychic"],
-		baseStats: { hp: 80, atk: 45, def: 70, spa: 104, spd: 115, spe: 20 },
+		baseStats: { hp: 70, atk: 45, def: 70, spa: 114, spd: 140, spe: 20 },
 		abilities: { 0: "Flower Veil", 1: "Grassy Surge",  H: "Slow Start" },
 		heightm: 1.0,
 		weightkg: 11.8,
