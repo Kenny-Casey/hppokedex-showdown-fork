@@ -47,4 +47,20 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         inherit: true,
         isNonstandard: null,
     },
+    poweruppunch: {
+        inherit: true,
+        isNonstandard: null,
+    },
+    autotomize: {
+        inherit: true,
+        isNonstandard: null,
+    },
+    refresh: {
+        inherit: true,
+        isNonstandard: null,
+    },
+    revenge: {
+        inherit: true,
+        isNonstandard: null,
+    },
 };
