@@ -21940,7 +21940,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Scortoat",
 		types: ["Fire", "Ground"],
 		baseStats: { hp: 70, atk: 114, def: 85, spa: 45, spd: 80, spe: 92},
-		abilities: { 0: "Hustle", H: "Mold Breaker" },
+		abilities: { 0: "Defiant", H: "Mold Breaker" },
 		heightm: 1.0,
 		weightkg: 31.2,
 		color: "Brown",
@@ -22239,7 +22239,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	petrioth: {
 		num: -1076,
 		name: "Petrioth",
-		types: ["Grass", "Rock"],
+		types: ["Grass", "Psychic"],
 		baseStats: { hp: 71, atk: 25, def: 64, spa: 80, spd: 80, spe: 15 },
 		abilities: { 0: "Flower Veil", 1: "Grassy Surge",  H: "Slow Start" },
 		heightm: 0.7,
@@ -22254,7 +22254,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	akasloth: {
 		num: -1077,
 		name: "Akasloth",
-		types: ["Grass", "Rock"],
+		types: ["Grass", "Psychic"],
 		baseStats: { hp: 80, atk: 45, def: 70, spa: 104, spd: 115, spe: 20 },
 		abilities: { 0: "Flower Veil", 1: "Grassy Surge",  H: "Slow Start" },
 		heightm: 1.0,

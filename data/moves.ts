@@ -21324,11 +21324,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Flaming Insulation",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, heal: 1, protect: 1 },
+		flags: { snatch: 1, heal: 1, protect: 1, bypasssub: 1 },
 		onTry(source, target, move) {
 			const hpThresh=source.hp/source.maxhp;
 			this.heal(source.baseMaxhp / 3, source, source);
-			if (hpThresh>=0.67) {
+			if (hpThresh>=0.67 && !target.volatiles['substitute']) {
 				target.trySetStatus('brn', target, move);
 				return;
 			}
@@ -21450,10 +21450,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onModifyMove(move, pokemon) {
 			const bestStat = pokemon.getBestStat(true, true);
 			move.overrideOffensiveStat=bestStat;
-		},
-		onAfterHit(target, source, move) {
-			const bestStat = source.getBestStat(true, true);
-			this.boost({ [bestStat]: 1 }, source);
+			move.secondary=  {
+				chance: 100,
+				self: {
+					boosts: {
+						[bestStat]: 1,
+					},
+				},
+			}
 		},
 		target: "normal",
 		type: "Steel",

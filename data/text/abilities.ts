@@ -2343,8 +2343,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cloudspewer: {
 		name: "Cloud Spewer",
-		desc: "Holder's Flying-type attacks have 1.2x power.",
-		shortDesc: "Holder's Flying-type attacks have 1.2x power.",
+		desc: "This Pokemon's Flying-type attacks have 1.2x power.",
+		shortDesc: "This Pokemon's Flying-type attacks have 1.2x power.",
 	},
 	eyeofmalice: {
 		name: "Eye of Malice",
@@ -2413,8 +2413,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	figureskater: {
 		name: "Figure Skater",
-		desc: "When switching in, the holder is unaffected by hazards on its side of the field.",
-		shortDesc: "When switching in, the holder is unaffected by hazards on its side of the field.",
+		desc: "When switching in, this Pokemon is unaffected by hazards on its side of the field.",
+		shortDesc: "When switching in, this Pokemon is unaffected by hazards on its side of the field.",
 	},
 	flytrap: {
 		name: "Flytrap",

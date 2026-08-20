@@ -186,7 +186,8 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	pikachu :{
-		tier: "UU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 
 	pikachucosplay :{
@@ -1385,7 +1386,8 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	wooper :{
-		tier: "LC",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 
 	wooperpaldea :{
@@ -1393,7 +1395,8 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	quagsire :{
-		tier: "UU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 
 	espeon :{
@@ -2165,11 +2168,13 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	aggron :{
-		tier: "UU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 
 	aggronmega :{
-		tier: "UU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 
 	meditite :{
@@ -2993,7 +2998,8 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	spiritomb :{
-		tier: "UU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 
 	gible :{
@@ -4094,7 +4100,8 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	beartic :{
-		tier: "UU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 
 	cryogonal :{
@@ -5448,7 +5455,8 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 
 	komala :{
-		tier: "UU",
+		isNonstandard: "Past",
+		tier: "Illegal",
 	},
 
 	turtonator :{
