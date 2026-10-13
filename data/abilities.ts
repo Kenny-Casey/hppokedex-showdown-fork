@@ -5979,7 +5979,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return damage/2;
 			}
 			else{
-				if(effect.basePower<70){
+				if(effect.basePower<=70){
 					return damage/2;
 				}
 			}
