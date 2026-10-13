@@ -29,7 +29,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		desc: "Test",
 		mod: 'gen9hppokedex',
 		ruleset: ['Standard','+HPPokedex', 'Terastal Clause'],
-		banlist: ['Baton Pass'],
+		banlist: ['Baton Pass', 'King\'s Rock', 'Razor Fang', 'Swagger'],
 	},
 
 	// S/V Singles

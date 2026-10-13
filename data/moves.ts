@@ -21324,7 +21324,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Flaming Insulation",
 		pp: 5,
 		priority: 0,
-		flags: { snatch: 1, heal: 1, protect: 1, bypasssub: 1 },
+		flags: { snatch: 1, heal: 1, protect: 1, bypasssub: 1, defrost: 1, },
 		onTry(source, target, move) {
 			const hpThresh=source.hp/source.maxhp;
 			this.heal(source.baseMaxhp / 3, source, source);
@@ -21582,7 +21582,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	dragonfangs: {
 		num: 1011,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		name: "Dragon Fangs",
 		pp: 10,
@@ -21783,6 +21783,20 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			evasion: -2,
 		},
 		target: "allAdjacentFoes",
+		type: "Water",
+		isNonstandard: "HPPokedex",
+	},
+	bubbleblast: {
+		num: 1018,
+		accuracy: 90,
+		basePower: 25,
+		category: "Special",
+		name: "Bubble Blast",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
+		multihit: [2, 5],
+		target: "normal",
 		type: "Water",
 		isNonstandard: "HPPokedex",
 	},
