@@ -7662,8 +7662,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		//HPPokedex changes
 	flaminginsulation: {
 		name: "Flaming Insulation",
-		desc: "The user restores 1/3rd of its maximum HP. All opponents are burned if 1/3 or less is healed.",
-		shortDesc: "Heals 33%. Burns foe(s) if under 33% healed",
+		desc: "The user restores 1/3rd of its maximum HP. All opponents are burned if 1/3 or less is healed. Thaws user.",
+		shortDesc: "Heals 33%. Burns foe(s) if under 33% healed. Thaws user.",
 	},
 	atomichoney: {
 		name: "Atomic Honey",
@@ -7749,5 +7749,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Sticky Bubbles",
 		desc: "Harshly lowers all opponents' Speed and Evasion.",
 		shortDesc: "Harshly lowers all opponents' Speed and Evasion.",
+	},
+	bubbleblast: {
+		name: "Bubble Blast",
+		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
+		shortDesc: "Hits 2-5 times in one turn.",
 	},
 };

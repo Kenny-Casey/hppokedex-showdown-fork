@@ -2343,8 +2343,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	cloudspewer: {
 		name: "Cloud Spewer",
-		desc: "This Pokemon's Flying-type attacks have 1.2x power.",
-		shortDesc: "This Pokemon's Flying-type attacks have 1.2x power.",
+		desc: "This Pokemon's Flying-type attacks have 1.2x power and 1.3x accuracy.",
+		shortDesc: "This Pokemon's Flying-type attacks have 1.2x power and 1.3x accuracy.",
 	},
 	eyeofmalice: {
 		name: "Eye of Malice",
@@ -2388,8 +2388,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	billowingsmoke: {
 		name: "Billowing Smoke",
-		desc: "This pokemon takes half as much damage from moves with 80 or less Base Power, as well as indirect sources of damage. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage.",
-		shortDesc: "This Pokemon takes 50% damage from 80 Base Power or lower moves and indirect damage.",
+		desc: "This pokemon takes half as much damage from moves with 70 or less Base Power, as well as indirect sources of damage. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage.",
+		shortDesc: "This Pokemon takes 50% damage from 70 Base Power or lower moves and indirect damage.",
 	},
 	soulreaper: {
 		name: "Soul Reaper",
@@ -2398,8 +2398,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	hyperfixation: {
 		name: "Hyperfixation",
-		desc: "This Pokemon's attacks always go first against moves of the same priority.",
-		shortDesc: "This Pokemon always moves first in its priority bracket with attacking moves.",
+		desc: "This Pokemon's STAB attacks always go first against moves of the same priority.",
+		shortDesc: "This Pokemon always moves first in its priority bracket when using STAB attacks.",
 	},
 	thermotherapy: {
 		name: "Thermotherapy",
