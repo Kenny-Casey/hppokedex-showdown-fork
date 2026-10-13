@@ -63,4 +63,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
         inherit: true,
         isNonstandard: null,
     },
+    corrosivegas: {
+        inherit: true,
+        isNonstandard: null,
+    }
 };
