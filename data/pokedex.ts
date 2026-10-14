@@ -22174,7 +22174,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: -1071,
 		name: "Bubbafrog",
 		types: ["Water", "Fairy"],
-		baseStats: { hp: 72, atk: 60, def: 50, spa: 85, spd: 122, spe: 104 },
+		baseStats: { hp: 77, atk: 60, def: 55, spa: 85, spd: 122, spe: 104 },
 		abilities: { 0: "Sticky Hold", 1: "Bulletproof",  H: "Gooey" },
 		heightm: 0.7,
 		weightkg: 22.7,
