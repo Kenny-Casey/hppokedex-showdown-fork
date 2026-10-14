@@ -5777,6 +5777,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return this.chainModify([4915, 4096]);
 			}
 		},
+		onSourceModifyAccuracyPriority: -1,
+		onSourceModifyAccuracy(accuracy, target, source, move) {
+			if (typeof accuracy !== 'number') return;
+			if (move && move.type === 'Flying') {
+				this.debug('cloudspewer - enhancing accuracy');
+				return this.chainModify([5325, 4096]);
+			}
+		},
 		flags: {},
 		name: "Cloud Spewer",
 		rating: 4,
@@ -5971,7 +5979,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return damage/2;
 			}
 			else{
-				if(effect.basePower<80){
+				if(effect.basePower<=70){
 					return damage/2;
 				}
 			}
@@ -5997,7 +6005,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	hyperfixation: {
 		onFractionalPriorityPriority: -1,
 		onFractionalPriority(priority, pokemon, target, move) {
-			if (move.category !== "Status") {
+			if (move.category !== "Status" && pokemon.hasType(move.type)) {
 				return 0.1;
 			}
 		},
