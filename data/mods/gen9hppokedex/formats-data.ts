@@ -7885,4 +7885,16 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "HPPokedex",
 		tier: "OU",
 	},
+	crimrax: {
+		isNonstandard: "HPPokedex",
+		tier: "LC",
+	},
+	wermiflame: {
+		isNonstandard: "HPPokedex",
+		tier: "NFE",
+	},
+	infernion: {
+		isNonstandard: "HPPokedex",
+		tier: "OU",
+	},
 };
