@@ -105938,5 +105938,21 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			woodhammer: ["9M"],
 		},
 	},
+	crimrax: {
+		learnset: {
+
+		},
+	},
+	wermiflame: {
+		learnset: {
+
+		},
+	},
+	infernion: {
+		learnset: {
+			flamethrower: ["9M"],
+			wildfire: ["9M"],
+		},
+	},
 };
 

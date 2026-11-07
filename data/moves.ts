@@ -21800,4 +21800,38 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Water",
 		isNonstandard: "HPPokedex",
 	},
+	wildfire: {
+		num: 1019,
+		accuracy: 100,
+		basePower: 60,
+		category: "Special",
+		name: "Wildfire",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		volatileStatus: 'laserfocus',
+		condition: {
+			duration: 2,
+			onStart(pokemon, source, effect) {
+				if (effect && (['costar', 'imposter', 'psychup', 'transform'].includes(effect.id))) {
+					this.add('-start', source, 'move: Wildfire', '[silent]');
+				} else {
+					this.add('-start', source, 'move: Wildfire');
+				}
+			},
+			onRestart(pokemon, source) {
+				this.effectState.duration = 2;
+				this.add('-start', source, 'move: Wildfire');
+			},
+			onModifyCritRatio(critRatio) {
+				return 5;
+			},
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'move: Wildfire', '[silent]');
+			},
+		},
+		target: "normal",
+		type: "Dragon",
+		isNonstandard: "HPPokedex",
+	},
 };

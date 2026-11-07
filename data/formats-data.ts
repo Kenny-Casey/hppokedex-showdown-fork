@@ -6644,4 +6644,16 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		isNonstandard: "HPPokedex",
 		tier: "Illegal",
 	},
+	crimrax: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	wermiflame: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
+	infernion: {
+		isNonstandard: "HPPokedex",
+		tier: "Illegal",
+	},
 };
