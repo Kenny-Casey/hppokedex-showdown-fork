@@ -7863,7 +7863,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 	akasloth: {
 		isNonstandard: "HPPokedex",
-		tier: "OU",
+		tier: "UU",
 	},
 	shuppetheroguea: {
 		isNonstandard: "HPPokedex",
@@ -7871,7 +7871,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 	strawnette: {
 		isNonstandard: "HPPokedex",
-		tier: "OU",
+		tier: "UU",
 	},
 	figgipiggi: {
 		isNonstandard: "HPPokedex",
@@ -7883,6 +7883,6 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 	arboaracious: {
 		isNonstandard: "HPPokedex",
-		tier: "OU",
+		tier: "UU",
 	},
 };
