@@ -105951,7 +105951,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	infernion: {
 		learnset: {
 			flamethrower: ["9M"],
-			wildfire: ["9M"],
+			wildfir: ["9M"],
 		},
 	},
 };

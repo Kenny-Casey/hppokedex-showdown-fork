@@ -7755,8 +7755,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
 		shortDesc: "Hits 2-5 times in one turn.",
 	},
-	wildfire: {
-		name: "Wildfire",
+	wildfir: {
+		name: "Wildfir",
 		desc: "Until the end of the next turn, the user's attacks will be critical hits.",
 		shortDesc: "Until the end of the next turn, user's moves crit.",
 	}
