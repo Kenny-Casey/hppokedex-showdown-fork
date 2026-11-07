@@ -21809,26 +21809,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-		volatileStatus: 'laserfocus',
-		condition: {
-			duration: 2,
-			onStart(pokemon, source, effect) {
-				if (effect && (['costar', 'imposter', 'psychup', 'transform'].includes(effect.id))) {
-					this.add('-start', source, 'move: Wildfir', '[silent]');
-				} else {
-					this.add('-start', source, 'move: Wildfir');
-				}
-			},
-			onRestart(pokemon, source) {
-				this.effectState.duration = 2;
-				this.add('-start', source, 'move: Wildfir');
-			},
-			onModifyCritRatio(critRatio) {
-				return 5;
-			},
-			onEnd(pokemon) {
-				this.add('-end', pokemon, 'move: Wildfir', '[silent]');
-			},
+		self: {
+			volatileStatus: 'laserfocus',
 		},
 		target: "normal",
 		type: "Dragon",
