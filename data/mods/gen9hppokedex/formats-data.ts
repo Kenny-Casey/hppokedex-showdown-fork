@@ -7635,7 +7635,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 	tiripsflask: {
 		isNonstandard: "HPPokedex",
-		tier: "OU",
+		tier: "UU",
 	},
 	tiripsorb: {
 		isNonstandard: "HPPokedex",
