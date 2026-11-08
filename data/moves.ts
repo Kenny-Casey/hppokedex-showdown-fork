@@ -21800,12 +21800,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Water",
 		isNonstandard: "HPPokedex",
 	},
-	wildfir: {
+	wildfire: {
 		num: 1019,
 		accuracy: 100,
 		basePower: 60,
 		category: "Special",
-		name: "Wildfir",
+		name: "Wildfire",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
